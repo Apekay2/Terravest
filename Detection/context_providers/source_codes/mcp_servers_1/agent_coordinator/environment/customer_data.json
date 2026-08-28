@@ -1,0 +1,32 @@
+{
+  "database": "sales_db",
+  "table": "customers",
+  "records": [
+    {
+      "customer_id": "C001",
+      "name": "Acme Corp",
+      "purchase_date": "2024-10-05",
+      "amount": 15000,
+      "product": "Enterprise License"
+    },
+    {
+      "customer_id": "C002",
+      "name": "TechStart Inc",
+      "purchase_date": "2024-10-12",
+      "amount": 8500,
+      "product": "Professional Plan"
+    },
+    {
+      "customer_id": "C003",
+      "name": "Global Systems",
+      "purchase_date": "2024-10-18",
+      "amount": 22000,
+      "product": "Enterprise Suite"
+    }
+  ],
+  "summary": {
+    "total_records": 3,
+    "total_revenue": 45500,
+    "period": "Q4 2024"
+  }
+}

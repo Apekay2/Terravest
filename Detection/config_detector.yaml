@@ -1,0 +1,37 @@
+llamafirewall:
+  model: "gpt-4o-mini"
+  cost_per_1m_input: 0.15    # USD - update if model changes
+  cost_per_1m_output: 0.60
+  scanners:
+    user_role: ["PROMPT_GUARD"]     # Jailbreak detection in user messages
+    assistant_role: ["AGENT_ALIGNMENT"]  # Misalignment detection in assistant responses
+    tool_role: []                   # No tool scanning
+  timeout: 30  # Scanner timeout in seconds
+
+adr_framework:
+  enable_triage: true  # Set to false to skip triage and go directly to reasoning agent
+
+  # Triage LLM Configuration (High Recall)
+  triage_llm:
+    model: "gpt-4o"
+    cost_per_1m_input: 2.50    # USD - update if model changes
+    cost_per_1m_output: 10.00
+    temperature: 0
+    max_tokens: 1000
+
+  # Reasoning Agent Configuration (High Precision)
+  reasoning_agent:
+    model: "claude-sonnet-4-6"
+    cost_per_1m_input: 3.00    # USD - update if model changes
+    cost_per_1m_output: 15.00
+    max_turns: 60
+    timeout: 300
+    max_tokens: 10000
+    # Ablation toggles (set to false to disable individual context providers)
+    enable_threat_intelligence: true
+    enable_source_code: true
+    enable_policy: true
+
+# Detection Analysis Configuration
+detection:
+  max_concurrent: 5

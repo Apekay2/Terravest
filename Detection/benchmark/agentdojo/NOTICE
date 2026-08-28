@@ -1,0 +1,7 @@
+This directory (`Detection/benchmark/agentdojo/`) vendors code from the
+AgentDojo project:
+
+    https://github.com/ethz-spylab/agentdojo
+
+AgentDojo is licensed under the MIT License (see LICENSE in this directory),
+not the Apache License, Version 2.0 that covers the rest of this repository.

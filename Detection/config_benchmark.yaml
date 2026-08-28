@@ -1,0 +1,253 @@
+# ADR Benchmark Configuration
+# MCP Security Research Benchmark System
+
+# Execution Settings
+execution:
+  max_execution_time: 600
+  max_turns: 30
+  permission_mode: bypassPermissions
+
+# Concurrent Execution Settings
+concurrency:
+  max_concurrent_tasks: 10
+  session_collection_delay: 2
+
+# Built-in tools to block for MCP-only usage
+# Organized by category for easier maintenance
+tool_restrictions:
+  # File operations
+  file_tools:
+    - CreateFile
+    - Read
+    - ReadFile
+    - WriteFile
+    - DeleteFile
+    - ListFiles
+    - MoveFile
+    - CopyFile
+
+  # Editing tools
+  edit_tools:
+    - TodoWrite
+    - Write
+    - Edit
+    - MultiEdit
+
+  # Terminal and system tools
+  terminal_tools:
+    - LS
+    - Bash
+    - Terminal
+    - Shell
+    - Execute
+    - Run
+    - Command
+    - Process
+    - System
+
+  # Search and navigation tools
+  search_tools:
+    - Task
+    - Grep
+    - Glob
+    - Find
+    - Locate
+    - Search
+
+  # Memory and storage tools
+  memory_tools:
+    - Memory
+    - Store
+    - Retrieve
+    - Remember
+    - Recall
+    - Save
+    - Load
+
+  # Version control tools
+  git_tools:
+    - Git
+    - GitAdd
+    - GitCommit
+    - GitPush
+    - GitPull
+    - GitStatus
+    - GitLog
+
+  # Time and scheduling tools
+  time_tools:
+    - Time
+    - Date
+    - DateTime
+    - Timestamp
+    - Clock
+    - Calendar
+    - Schedule
+
+  # Web and network tools
+  web_tools:
+    - WebSearch
+    - WebFetch
+    - WebScrape
+    - WebGet
+    - WebPost
+    - HttpRequest
+    - HttpGet
+    - HttpPost
+    - FetchUrl
+    - DownloadFile
+    - UploadFile
+    - NetworkRequest
+    - ApiCall
+    - RestApi
+    - GraphQL
+    - CurlRequest
+    - WgetRequest
+
+  # General utility tools
+  utility_tools:
+    - Calculator
+    - Math
+    - Compute
+    - Evaluate
+    - Convert
+    - Transform
+    - Format
+    - Parse
+    - Validate
+    - Generate
+    - Random
+    - UUID
+    - Hash
+    - Encode
+    - Decode
+    - Compress
+    - Decompress
+
+  # Communication and messaging tools
+  communication_tools:
+    - Email
+    - SendEmail
+    - SendMessage
+    - Notify
+    - Alert
+    - Webhook
+    - Slack
+    - Discord
+    - SMS
+    - Push
+
+# File paths and directories
+paths:
+  results_dir: "benchmark"
+  task_file: "tasks.json"
+  mcp_registry_file: "mcp_servers_registry.json"
+  claude_projects_dir: '~/.claude/projects'
+
+# Logging and output settings
+logging:
+  log_level: 'INFO'
+  session_file_prefix: 'claude_session_'
+  conversation_file: 'claude_conversation.json'
+  result_file: 'result.json'
+  summary_file: 'summary.json'
+  mcp_config_file: '.mcp.json'
+
+# Task validation settings
+validation:
+  min_task_steps: 3
+  max_task_steps: 10
+  required_task_fields:
+    - task_id
+    - description
+    - user_prompt
+    - mcp_servers
+
+# MCP Server settings
+mcp_servers:
+  test_timeout: 30  # seconds
+  startup_delay: 1  # seconds to wait for server startup
+  default_args:
+    git:
+      user_email: 'test@example.com'
+      user_name: 'Test User'
+
+# AgentDojo Benchmark Settings
+agentdojo:
+  # Model configuration
+  model: "gpt-4o"
+  agent: "react"
+
+  # Suites to run (all available suites)
+  suites:
+    - "slack"
+    - "banking"
+    - "travel"
+    - "workspace"
+
+  # Attacks to test (all available attacks)
+  attacks:
+    - "important_instructions"
+
+  # User tasks to run (all available user tasks)
+  user_tasks:
+    - "user_task_0"
+    - "user_task_1"
+    - "user_task_2"
+    - "user_task_3"
+    # - "user_task_4"
+    # - "user_task_5"
+    # - "user_task_6"
+    # - "user_task_7"
+    # - "user_task_8"
+    # - "user_task_9"
+    # - "user_task_10"
+    # - "user_task_11"
+    # - "user_task_12"
+    # - "user_task_13"
+    # - "user_task_14"
+    # - "user_task_15"
+    # - "user_task_16"
+    # - "user_task_17"
+    # - "user_task_18"
+    # - "user_task_19"
+    # - "user_task_20"
+    # - "user_task_21"
+    # - "user_task_22"
+    # - "user_task_23"
+    # - "user_task_24"
+    # - "user_task_25"
+    # - "user_task_26"
+    # - "user_task_27"
+    # - "user_task_28"
+    # - "user_task_29"
+    # - "user_task_30"
+    # - "user_task_31"
+    # - "user_task_32"
+    # - "user_task_33"
+    # - "user_task_34"
+    # - "user_task_35"
+    # - "user_task_36"
+    # - "user_task_37"
+    # - "user_task_38"
+    # - "user_task_39"
+
+  # Logging settings
+  logging:
+    level: "WARNING"  # Reduced logging for cleaner output
+    disable_http_logs: true
+
+# Security settings
+security:
+  enable_mcp_only_mode: true
+  block_network_tools: true
+  workspace_isolation: true
+  max_file_size_mb: 100
+  disable_safety_mechanisms: true  # For benchmark testing - disables Claude's built-in safety refusals
+  allowed_file_extensions:
+    - .txt
+    - .md
+    - .json
+    - .yaml
+    - .yml
+    - .log

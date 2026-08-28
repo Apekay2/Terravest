@@ -1,0 +1,4 @@
+# Local repro outputs (not shipped)
+ads_reasoning_workspace/
+benchmark/adr_bench_*/
+figs/

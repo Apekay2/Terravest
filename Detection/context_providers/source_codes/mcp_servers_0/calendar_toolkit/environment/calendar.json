@@ -1,0 +1,2436 @@
+[
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:00:00",
+        "event": "research meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:00:00",
+        "event": "research meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:00:00",
+        "event": "research meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:00:00",
+        "event": "research meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:00:00",
+        "event": "research meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:00:00",
+        "event": "research meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:00:00",
+        "event": "research meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-18 14:00:00",
+        "end_time": "2025-07-18 15:30:00",
+        "event": "board presentation - quarterly business report",
+        "location": "Executive Conference Room"
+    },
+    {
+        "start_time": "2025-07-18 14:00:00",
+        "end_time": "2025-07-18 16:00:00",
+        "event": "board meeting - quarterly business report presentation",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-18 10:00:00",
+        "end_time": "2025-07-18 11:30:00",
+        "event": "board meeting - quarterly business report presentation",
+        "location": "Executive Conference Room"
+    },
+    {
+        "start_time": "2025-07-14 09:00:00",
+        "end_time": "2025-07-14 10:00:00",
+        "event": "daily planning session",
+        "location": "Home Office"
+    },
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:30:00",
+        "event": "project review meeting",
+        "location": "Conference Room"
+    },
+    {
+        "start_time": "2025-07-14 17:00:00",
+        "end_time": "2025-07-14 18:00:00",
+        "event": "time management review",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-15 09:00:00",
+        "end_time": "2025-07-15 17:00:00",
+        "event": "weather planning review - london",
+        "location": "London"
+    },
+    {
+        "start_time": "2025-07-16 10:00:00",
+        "end_time": "2025-07-16 18:00:00",
+        "event": "weather planning review - paris",
+        "location": "Paris"
+    },
+    {
+        "start_time": "2025-07-17 11:00:00",
+        "end_time": "2025-07-17 19:00:00",
+        "event": "weather planning review - tokyo",
+        "location": "Tokyo"
+    },
+    {
+        "start_time": "2025-07-14 09:00:00",
+        "end_time": "2025-07-14 09:30:00",
+        "event": "daily planning session",
+        "location": "Home Office"
+    },
+    {
+        "start_time": "2025-07-14 10:00:00",
+        "end_time": "2025-07-14 12:00:00",
+        "event": "focus work block",
+        "location": "Home Office"
+    },
+    {
+        "start_time": "2025-07-14 14:00:00",
+        "end_time": "2025-07-14 15:00:00",
+        "event": "project review & updates",
+        "location": "Home Office"
+    },
+    {
+        "start_time": "2025-07-15 09:00:00",
+        "end_time": "2025-07-15 10:00:00",
+        "event": "content creation review",
+        "location": "Content Studio"
+    },
+    {
+        "start_time": "2025-07-15 14:00:00",
+        "end_time": "2025-07-15 15:30:00",
+        "event": "code review meeting",
+        "location": "Development Room"
+    },
+    {
+        "start_time": "2025-07-16 14:00:00",
+        "end_time": "2025-07-16 15:00:00",
+        "event": "code review meeting",
+        "location": "Development Team Room"
+    },
+    {
+        "start_time": "2025-07-18 09:00:00",
+        "end_time": "2025-07-18 10:00:00",
+        "event": "requirements analysis deadline",
+        "location": "Office"
+    },
+    {
+        "start_time": "2025-07-21 14:00:00",
+        "end_time": "2025-07-21 15:00:00",
+        "event": "design phase deadline",
+        "location": "Conference Room"
+    },
+    {
+        "start_time": "2025-07-28 16:00:00",
+        "end_time": "2025-07-28 17:00:00",
+        "event": "implementation deadline",
+        "location": "Development Lab"
+    },
+    {
+        "start_time": "2025-08-02 11:00:00",
+        "end_time": "2025-08-02 12:00:00",
+        "event": "testing deadline",
+        "location": "QA Lab"
+    },
+    {
+        "start_time": "2025-07-16 09:00:00",
+        "end_time": "2025-07-16 17:00:00",
+        "event": "requirements analysis deadline",
+        "location": "Project Office"
+    },
+    {
+        "start_time": "2025-07-20 09:00:00",
+        "end_time": "2025-07-20 17:00:00",
+        "event": "system design deadline",
+        "location": "Project Office"
+    },
+    {
+        "start_time": "2025-07-25 09:00:00",
+        "end_time": "2025-07-25 17:00:00",
+        "event": "implementation deadline",
+        "location": "Project Office"
+    },
+    {
+        "start_time": "2025-07-30 09:00:00",
+        "end_time": "2025-07-30 17:00:00",
+        "event": "testing deadline",
+        "location": "Project Office"
+    },
+    {
+        "start_time": "2025-07-15 09:00:00",
+        "end_time": "2025-07-15 10:00:00",
+        "event": "project kickoff meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-15 10:00:00",
+        "end_time": "2025-07-15 11:00:00",
+        "event": "project management system kickoff",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-15 09:00:00",
+        "end_time": "2025-07-15 10:00:00",
+        "event": "project management system review",
+        "location": "Office"
+    },
+    {
+        "start_time": "2025-07-15 10:00:00",
+        "end_time": "2025-07-15 11:00:00",
+        "event": "project review meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-15 10:00:00",
+        "end_time": "2025-07-15 11:00:00",
+        "event": "project review meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-15 10:00:00",
+        "end_time": "2025-07-15 11:00:00",
+        "event": "project kickoff meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-15 10:00:00",
+        "end_time": "2025-07-15 11:00:00",
+        "event": "project management system review",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-16 09:00:00",
+        "end_time": "2025-07-16 10:00:00",
+        "event": "website redesign - project kickoff",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-30 14:00:00",
+        "end_time": "2025-07-30 15:00:00",
+        "event": "website redesign - design review",
+        "location": "Design Studio"
+    },
+    {
+        "start_time": "2025-08-13 11:00:00",
+        "end_time": "2025-08-13 12:00:00",
+        "event": "website redesign - development complete",
+        "location": "Development Office"
+    },
+    {
+        "start_time": "2025-08-20 10:00:00",
+        "end_time": "2025-08-20 11:00:00",
+        "event": "website redesign - final launch",
+        "location": "Main Office"
+    },
+    {
+        "start_time": "2025-07-14 09:00:00",
+        "end_time": "2025-07-14 10:00:00",
+        "event": "website redesign - project kickoff",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-21 14:00:00",
+        "end_time": "2025-07-21 15:00:00",
+        "event": "website redesign - design review",
+        "location": "Design Studio"
+    },
+    {
+        "start_time": "2025-07-28 10:00:00",
+        "end_time": "2025-07-28 11:00:00",
+        "event": "website redesign - development sprint planning",
+        "location": "Dev Team Room"
+    },
+    {
+        "start_time": "2025-08-04 16:00:00",
+        "end_time": "2025-08-04 17:00:00",
+        "event": "website redesign - testing & qa review",
+        "location": "QA Lab"
+    },
+    {
+        "start_time": "2025-08-11 13:00:00",
+        "end_time": "2025-08-11 14:00:00",
+        "event": "website redesign - final deployment",
+        "location": "Production Environment"
+    },
+    {
+        "start_time": "2025-07-15 09:00:00",
+        "end_time": "2025-07-15 10:00:00",
+        "event": "website redesign - project kickoff",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-22 14:00:00",
+        "end_time": "2025-07-22 15:00:00",
+        "event": "website redesign - design review",
+        "location": "Design Studio"
+    },
+    {
+        "start_time": "2025-07-29 13:00:00",
+        "end_time": "2025-07-29 14:00:00",
+        "event": "website redesign - development checkpoint",
+        "location": "Dev Room"
+    },
+    {
+        "start_time": "2025-08-05 16:00:00",
+        "end_time": "2025-08-05 17:00:00",
+        "event": "website redesign - testing & qa",
+        "location": "QA Lab"
+    },
+    {
+        "start_time": "2025-08-12 15:00:00",
+        "end_time": "2025-08-12 16:00:00",
+        "event": "website redesign - project launch",
+        "location": "Main Office"
+    },
+    {
+        "start_time": "2025-07-15 14:00:00",
+        "end_time": "2025-07-15 15:00:00",
+        "event": "meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-15 14:00:00",
+        "end_time": "2025-07-15 15:00:00",
+        "event": "meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-15 14:00:00",
+        "end_time": "2025-07-15 15:00:00",
+        "event": "meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-15 14:00:00",
+        "end_time": "2025-07-15 15:00:00",
+        "event": "meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-15 14:00:00",
+        "end_time": "2025-07-15 15:00:00",
+        "event": "meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-15 14:00:00",
+        "end_time": "2025-07-15 15:00:00",
+        "event": "meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-15 09:00:00",
+        "end_time": "2025-07-15 10:00:00",
+        "event": "project kickoff - website redesign",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-26 14:00:00",
+        "end_time": "2025-07-26 15:30:00",
+        "event": "design review - website redesign",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-08-15 10:00:00",
+        "end_time": "2025-08-15 11:00:00",
+        "event": "project launch - website redesign",
+        "location": "Main Office"
+    },
+    {
+        "start_time": "2025-07-18 17:00:00",
+        "end_time": "2025-07-18 17:30:00",
+        "event": "requirements analysis deadline",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-25 17:00:00",
+        "end_time": "2025-07-25 17:30:00",
+        "event": "design deadline",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-08 17:00:00",
+        "end_time": "2025-08-08 17:30:00",
+        "event": "frontend development deadline",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-15 09:00:00",
+        "end_time": "2025-07-15 17:00:00",
+        "event": "website redesign - research and planning start",
+        "location": "Office"
+    },
+    {
+        "start_time": "2025-07-16 16:00:00",
+        "end_time": "2025-07-16 17:00:00",
+        "event": "website redesign - research phase deadline",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-17 09:00:00",
+        "end_time": "2025-07-17 17:00:00",
+        "event": "website redesign - design mockups start",
+        "location": "Design Studio"
+    },
+    {
+        "start_time": "2025-07-20 16:00:00",
+        "end_time": "2025-07-20 17:00:00",
+        "event": "website redesign - design mockups deadline",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-21 09:00:00",
+        "end_time": "2025-07-21 17:00:00",
+        "event": "website redesign - development phase start",
+        "location": "Development Lab"
+    },
+    {
+        "start_time": "2025-07-28 16:00:00",
+        "end_time": "2025-07-28 17:00:00",
+        "event": "website redesign - development phase deadline",
+        "location": ""
+    },
+    {
+        "start_time": "2025-07-29 09:00:00",
+        "end_time": "2025-07-29 17:00:00",
+        "event": "website redesign - testing and launch start",
+        "location": "Testing Lab"
+    },
+    {
+        "start_time": "2025-07-30 16:00:00",
+        "end_time": "2025-07-30 18:00:00",
+        "event": "website redesign - project launch",
+        "location": "Conference Room"
+    },
+    {
+        "start_time": "2025-07-21 02:00:00",
+        "end_time": "2025-07-21 06:00:00",
+        "event": "network maintenance window - gateway updates",
+        "location": "Main Network Gateway (192.168.1.1)"
+    },
+    {
+        "start_time": "2025-07-28 03:00:00",
+        "end_time": "2025-07-28 05:00:00",
+        "event": "network security audit review",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network infrastructure maintenance - router updates",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-27 01:00:00",
+        "end_time": "2025-07-27 03:00:00",
+        "event": "network monitoring and performance review",
+        "location": "NOC"
+    },
+    {
+        "start_time": "2025-07-20 09:00:00",
+        "end_time": "2025-07-20 10:00:00",
+        "event": "project kick-off meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-01 14:00:00",
+        "end_time": "2025-08-01 15:30:00",
+        "event": "phase 1 milestone review",
+        "location": "Project Office"
+    },
+    {
+        "start_time": "2025-08-15 10:00:00",
+        "end_time": "2025-08-15 11:30:00",
+        "event": "phase 2 milestone review",
+        "location": "Project Office"
+    },
+    {
+        "start_time": "2025-09-01 13:00:00",
+        "end_time": "2025-09-01 16:00:00",
+        "event": "project final review & delivery",
+        "location": "Main Conference Room"
+    },
+    {
+        "start_time": "2025-07-25 09:00:00",
+        "end_time": "2025-07-25 10:00:00",
+        "event": "design complete - website redesign",
+        "location": "Design Team Meeting Room"
+    },
+    {
+        "start_time": "2025-08-15 10:00:00",
+        "end_time": "2025-08-15 11:00:00",
+        "event": "frontend development complete - website redesign",
+        "location": "Development Team Office"
+    },
+    {
+        "start_time": "2025-09-01 14:00:00",
+        "end_time": "2025-09-01 15:00:00",
+        "event": "backend integration complete - website redesign",
+        "location": "Development Team Office"
+    },
+    {
+        "start_time": "2025-07-30 11:00:00",
+        "end_time": "2025-07-30 12:00:00",
+        "event": "app architecture design complete - mobile app",
+        "location": "Architecture Team Room"
+    },
+    {
+        "start_time": "2025-08-30 15:00:00",
+        "end_time": "2025-08-30 16:00:00",
+        "event": "core features development complete - mobile app",
+        "location": "Mobile Development Team"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network infrastructure maintenance - primary segment",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-22 01:00:00",
+        "end_time": "2025-07-22 03:00:00",
+        "event": "router firmware update - local router",
+        "location": "Network Equipment Room"
+    },
+    {
+        "start_time": "2025-07-25 03:00:00",
+        "end_time": "2025-07-25 05:00:00",
+        "event": "network performance review and optimization",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network router maintenance - local network router (192.168.1.1)",
+        "location": "Server Room"
+    },
+    {
+        "start_time": "2025-07-27 01:00:00",
+        "end_time": "2025-07-27 03:00:00",
+        "event": "network performance review and firewall rules update",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-08-03 02:30:00",
+        "end_time": "2025-08-03 04:30:00",
+        "event": "network traffic analysis and optimization",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 06:00:00",
+        "event": "network maintenance window - router updates",
+        "location": "Local Network Infrastructure"
+    },
+    {
+        "start_time": "2025-07-27 03:00:00",
+        "end_time": "2025-07-27 05:00:00",
+        "event": "network security audit",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 06:00:00",
+        "event": "network infrastructure maintenance",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-22 01:00:00",
+        "end_time": "2025-07-22 03:00:00",
+        "event": "router firmware update",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-22 02:00:00",
+        "end_time": "2025-07-22 04:00:00",
+        "event": "network infrastructure maintenance - primary gateway",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-29 03:00:00",
+        "end_time": "2025-07-29 05:00:00",
+        "event": "network performance review and optimization",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 06:00:00",
+        "event": "network infrastructure maintenance",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-25 01:00:00",
+        "end_time": "2025-07-25 03:00:00",
+        "event": "router firmware update",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network infrastructure maintenance - router update",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-27 01:00:00",
+        "end_time": "2025-07-27 03:00:00",
+        "event": "network security patch - firewall rules update",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-08-03 02:30:00",
+        "end_time": "2025-08-03 04:30:00",
+        "event": "network performance monitoring - traffic analysis",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network maintenance - router firmware update",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-27 01:00:00",
+        "end_time": "2025-07-27 03:00:00",
+        "event": "network maintenance - firewall rule review",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network maintenance - router updates",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-27 03:00:00",
+        "end_time": "2025-07-27 05:00:00",
+        "event": "network maintenance - firewall rules review",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network maintenance window - router firmware update",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-27 01:00:00",
+        "end_time": "2025-07-27 03:00:00",
+        "event": "network performance review and optimization",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-22 02:00:00",
+        "end_time": "2025-07-22 04:00:00",
+        "event": "network infrastructure maintenance window",
+        "location": "Primary Network Segment (192.168.1.0/24)"
+    },
+    {
+        "start_time": "2025-07-29 02:00:00",
+        "end_time": "2025-07-29 03:00:00",
+        "event": "router configuration review",
+        "location": "Local Router (192.168.1.1)"
+    },
+    {
+        "start_time": "2025-07-22 02:00:00",
+        "end_time": "2025-07-22 04:00:00",
+        "event": "network infrastructure maintenance - router updates",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-29 01:00:00",
+        "end_time": "2025-07-29 03:00:00",
+        "event": "network traffic analysis review",
+        "location": "NOC"
+    },
+    {
+        "start_time": "2025-07-22 02:00:00",
+        "end_time": "2025-07-22 06:00:00",
+        "event": "network infrastructure maintenance",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-29 02:00:00",
+        "end_time": "2025-07-29 04:00:00",
+        "event": "firewall rules review",
+        "location": "IT Security Office"
+    },
+    {
+        "start_time": "2025-08-05 09:00:00",
+        "end_time": "2025-08-05 11:00:00",
+        "event": "network performance review",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-07-22 02:00:00",
+        "end_time": "2025-07-22 06:00:00",
+        "event": "network infrastructure maintenance - router updates",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-29 01:00:00",
+        "end_time": "2025-07-29 05:00:00",
+        "event": "network performance optimization - traffic analysis",
+        "location": "NOC"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network infrastructure maintenance - router updates",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-27 01:00:00",
+        "end_time": "2025-07-27 03:00:00",
+        "event": "network performance optimization - traffic analysis",
+        "location": "Network Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 04:00:00",
+        "event": "network infrastructure maintenance window",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-27 02:00:00",
+        "end_time": "2025-07-27 04:00:00",
+        "event": "network monitoring review",
+        "location": "IT Operations Center"
+    },
+    {
+        "start_time": "2025-07-20 02:00:00",
+        "end_time": "2025-07-20 06:00:00",
+        "event": "network infrastructure maintenance window",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-27 02:00:00",
+        "end_time": "2025-07-27 04:00:00",
+        "event": "router configuration review",
+        "location": "Data Center"
+    },
+    {
+        "start_time": "2025-07-23 02:00:00",
+        "end_time": "2025-07-23 06:00:00",
+        "event": "network infrastructure maintenance window",
+        "location": "Primary Network Subnet (192.168.1.0/24)"
+    },
+    {
+        "start_time": "2025-07-30 02:00:00",
+        "end_time": "2025-07-30 04:00:00",
+        "event": "router gateway security update",
+        "location": "Router Gateway (192.168.1.1)"
+    },
+    {
+        "start_time": "2025-07-30 02:00:00",
+        "end_time": "2025-07-30 04:00:00",
+        "event": "system maintenance window",
+        "location": "Server Infrastructure"
+    },
+    {
+        "start_time": "2025-08-04 09:00:00",
+        "end_time": "2025-08-04 09:30:00",
+        "event": "team standup",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-04 14:00:00",
+        "end_time": "2025-08-04 15:00:00",
+        "event": "client review",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-06 09:00:00",
+        "end_time": "2025-08-06 10:00:00",
+        "event": "daily standup meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-06 10:30:00",
+        "end_time": "2025-08-06 12:00:00",
+        "event": "focused work block - deep work",
+        "location": "Office"
+    },
+    {
+        "start_time": "2025-08-06 14:00:00",
+        "end_time": "2025-08-06 15:00:00",
+        "event": "client presentation",
+        "location": "Zoom Meeting"
+    },
+    {
+        "start_time": "2025-08-06 15:30:00",
+        "end_time": "2025-08-06 17:00:00",
+        "event": "strategic planning session",
+        "location": "Meeting Room B"
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-06 15:00:00",
+        "end_time": "2025-08-06 16:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-06 15:00:00",
+        "end_time": "2025-08-06 16:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-06 15:00:00",
+        "end_time": "2025-08-06 16:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-06 15:00:00",
+        "end_time": "2025-08-06 16:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": "Main Conference Room"
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+        "start_time": "2025-08-15 09:00:00",
+        "end_time": "2025-08-15 09:30:00",
+        "event": "daily standup",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-16 08:00:00",
+        "end_time": "2025-08-16 09:00:00",
+        "event": "apac team sync",
+        "location": "Video Conference Room A"
+    },
+    {
+        "start_time": "2025-08-16 14:00:00",
+        "end_time": "2025-08-16 15:30:00",
+        "event": "emea leadership meeting",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-08-16 18:00:00",
+        "end_time": "2025-08-16 19:00:00",
+        "event": "americas team all-hands",
+        "location": "Virtual Meeting Platform"
+    },
+    {
+        "start_time": "2025-08-15 09:00:00",
+        "end_time": "2025-08-15 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Remote"
+    },
+    {
+        "start_time": "2025-08-18 09:00:00",
+        "end_time": "2025-08-18 09:30:00",
+        "event": "monday motivation post - instagram & facebook",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-19 10:00:00",
+        "end_time": "2025-08-19 10:30:00",
+        "event": "educational content - linkedin & twitter",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-20 11:00:00",
+        "end_time": "2025-08-20 11:30:00",
+        "event": "wednesday tips & tricks - all platforms",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-21 15:00:00",
+        "end_time": "2025-08-21 15:30:00",
+        "event": "thursday product feature - instagram stories & tiktok",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-22 19:00:00",
+        "end_time": "2025-08-22 19:30:00",
+        "event": "friday behind-the-scenes - all platforms",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-23 13:00:00",
+        "end_time": "2025-08-23 13:30:00",
+        "event": "weekend community engagement - user-generated content",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-25 09:00:00",
+        "end_time": "2025-08-25 09:30:00",
+        "event": "weekly analytics review & strategy adjustment",
+        "location": "Team Meeting"
+    },
+    {
+        "start_time": "2025-08-27 11:00:00",
+        "end_time": "2025-08-27 11:30:00",
+        "event": "content creation day - visual assets & video",
+        "location": "Creative Studio"
+    },
+    {
+        "start_time": "2025-08-21 10:00:00",
+        "end_time": "2025-08-21 11:30:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-08-28 10:00:00",
+        "end_time": "2025-08-28 11:30:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-09-04 10:00:00",
+        "end_time": "2025-09-04 11:30:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-08-31 09:00:00",
+        "end_time": "2025-08-31 17:00:00",
+        "event": "threatdet-6146 security simulation completion",
+        "location": "Development Team"
+    },
+    {
+        "start_time": "2025-09-15 09:00:00",
+        "end_time": "2025-09-15 17:00:00",
+        "event": "q3 security testing phase completion",
+        "location": "Development Team"
+    },
+    {
+        "start_time": "2025-09-30 14:00:00",
+        "end_time": "2025-09-30 16:00:00",
+        "event": "sprint planning & retrospective",
+        "location": "Conference Room B / Virtual"
+    },
+    {
+        "start_time": "2024-05-20 10:00:00",
+        "end_time": "2024-05-20 11:30:00",
+        "event": "ai innovation summit",
+        "location": "Main Conference Hall"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 10:00:00",
+        "event": "project alpha - phase 1 kickoff",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-09-01 14:00:00",
+        "end_time": "2025-09-01 15:00:00",
+        "event": "project alpha - design review milestone",
+        "location": "Virtual Meeting"
+    },
+    {
+        "start_time": "2025-09-15 11:00:00",
+        "end_time": "2025-09-15 12:00:00",
+        "event": "project beta - requirements gathering deadline",
+        "location": "Client Site"
+    },
+    {
+        "start_time": "2025-10-01 13:00:00",
+        "end_time": "2025-10-01 14:00:00",
+        "event": "project alpha - development phase complete",
+        "location": "Development Lab"
+    },
+    {
+        "start_time": "2025-10-15 10:00:00",
+        "end_time": "2025-10-15 11:30:00",
+        "event": "project gamma - initial planning session",
+        "location": "Strategy Room"
+    },
+    {
+        "start_time": "2025-11-01 15:00:00",
+        "end_time": "2025-11-01 16:00:00",
+        "event": "project beta - final delivery deadline",
+        "location": "Client Presentation Room"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 10:30:00",
+        "event": "meeting effectiveness review - engineering department",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-21 14:00:00",
+        "end_time": "2025-08-21 15:30:00",
+        "event": "meeting effectiveness review - marketing department",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-08-22 10:00:00",
+        "end_time": "2025-08-22 11:30:00",
+        "event": "meeting effectiveness review - sales department",
+        "location": "Conference Room C"
+    },
+    {
+        "start_time": "2025-08-23 13:00:00",
+        "end_time": "2025-08-23 14:30:00",
+        "event": "meeting effectiveness review - human resources",
+        "location": "HR Conference Room"
+    },
+    {
+        "start_time": "2025-08-26 11:00:00",
+        "end_time": "2025-08-26 12:30:00",
+        "event": "meeting effectiveness review - finance department",
+        "location": "Finance Meeting Room"
+    },
+    {
+        "start_time": "2025-08-18 07:00:00",
+        "end_time": "2025-08-18 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-18 18:00:00",
+        "end_time": "2025-08-18 19:30:00",
+        "event": "evening strength training",
+        "location": "Gym Floor"
+    },
+    {
+        "start_time": "2025-08-19 07:00:00",
+        "end_time": "2025-08-19 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-19 18:00:00",
+        "end_time": "2025-08-19 19:30:00",
+        "event": "evening strength training",
+        "location": "Gym Floor"
+    },
+    {
+        "start_time": "2025-08-20 07:00:00",
+        "end_time": "2025-08-20 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-20 18:00:00",
+        "end_time": "2025-08-20 19:30:00",
+        "event": "evening strength training",
+        "location": "Gym Floor"
+    },
+    {
+        "start_time": "2025-08-21 07:00:00",
+        "end_time": "2025-08-21 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-21 18:00:00",
+        "end_time": "2025-08-21 19:30:00",
+        "event": "evening strength training",
+        "location": "Gym Floor"
+    },
+    {
+        "start_time": "2025-08-22 07:00:00",
+        "end_time": "2025-08-22 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-22 18:00:00",
+        "end_time": "2025-08-22 19:30:00",
+        "event": "evening strength training",
+        "location": "Gym Floor"
+    },
+    {
+        "start_time": "2025-08-23 07:00:00",
+        "end_time": "2025-08-23 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 17:00:00",
+        "event": "product development kickoff meeting",
+        "location": "Executive Conference Room"
+    },
+    {
+        "start_time": "2025-09-05 14:00:00",
+        "end_time": "2025-09-05 16:00:00",
+        "event": "alpha version review & testing",
+        "location": "R&D Lab"
+    },
+    {
+        "start_time": "2025-09-20 10:00:00",
+        "end_time": "2025-09-20 12:00:00",
+        "event": "beta release milestone",
+        "location": "Product Team Office"
+    },
+    {
+        "start_time": "2025-10-10 09:00:00",
+        "end_time": "2025-10-10 18:00:00",
+        "event": "pre-launch marketing campaign launch",
+        "location": "Marketing Department"
+    },
+    {
+        "start_time": "2025-11-01 08:00:00",
+        "end_time": "2025-11-01 20:00:00",
+        "event": "official product launch event",
+        "location": "Main Auditorium"
+    },
+    {
+        "start_time": "2025-11-15 13:00:00",
+        "end_time": "2025-11-15 15:00:00",
+        "event": "post-launch performance review",
+        "location": "Executive Boardroom"
+    },
+    {
+        "start_time": "2024-04-15 09:00:00",
+        "end_time": "2024-04-15 17:00:00",
+        "event": "product launch",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-22 14:00:00",
+        "end_time": "2025-08-22 17:00:00",
+        "event": "team building event",
+        "location": "TBD - To be confirmed based on survey preferences"
+    },
+    {
+        "start_time": "2025-08-18 12:00:00",
+        "end_time": "2025-08-18 13:00:00",
+        "event": "mindfulness monday - guided meditation session",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-08-22 16:00:00",
+        "end_time": "2025-08-22 17:00:00",
+        "event": "fitness friday - yoga & stretching session",
+        "location": "Wellness Room / Outdoor Patio"
+    },
+    {
+        "start_time": "2025-08-25 12:00:00",
+        "end_time": "2025-08-25 13:00:00",
+        "event": "mindfulness monday - stress management workshop",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-08-29 16:00:00",
+        "end_time": "2025-08-29 17:00:00",
+        "event": "fitness friday - team walking challenge",
+        "location": "Office Campus / Local Park"
+    },
+    {
+        "start_time": "2025-09-01 12:00:00",
+        "end_time": "2025-09-01 13:00:00",
+        "event": "mindfulness monday - breathing techniques workshop",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-09-05 16:00:00",
+        "end_time": "2025-09-05 17:00:00",
+        "event": "fitness friday - nutrition & wellness seminar",
+        "location": "Cafeteria / Main Conference Room"
+    },
+    {
+        "start_time": "2025-08-20 10:00:00",
+        "end_time": "2025-08-20 11:00:00",
+        "event": "performance review - john smith",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-09-15 14:00:00",
+        "end_time": "2025-09-15 15:00:00",
+        "event": "performance review - emily davis",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-08-21 10:00:00",
+        "end_time": "2025-08-21 11:30:00",
+        "event": "weekly content review - categorization & tagging",
+        "location": "Knowledge Management Office"
+    },
+    {
+        "start_time": "2025-08-28 10:00:00",
+        "end_time": "2025-08-28 11:30:00",
+        "event": "weekly content review - categorization & tagging",
+        "location": "Knowledge Management Office"
+    },
+    {
+        "start_time": "2025-09-04 10:00:00",
+        "end_time": "2025-09-04 11:30:00",
+        "event": "weekly content review - categorization & tagging",
+        "location": "Knowledge Management Office"
+    },
+    {
+        "start_time": "2025-08-30 14:00:00",
+        "end_time": "2025-08-30 16:00:00",
+        "event": "monthly curation strategy review",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2024-05-20 10:00:00",
+        "end_time": "2024-05-20 11:00:00",
+        "event": "ai innovation summit",
+        "location": "Main Conference Hall"
+    },
+    {
+        "start_time": "2025-08-14 09:00:00",
+        "end_time": "2025-08-14 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Virtual"
+    },
+    {
+        "start_time": "2025-08-19 14:00:00",
+        "end_time": "2025-08-19 15:30:00",
+        "event": "meeting effectiveness review - engineering department",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-21 10:00:00",
+        "end_time": "2025-08-21 11:30:00",
+        "event": "meeting effectiveness review - marketing department",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-08-22 15:00:00",
+        "end_time": "2025-08-22 16:30:00",
+        "event": "meeting effectiveness review - sales department",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-26 11:00:00",
+        "end_time": "2025-08-26 12:30:00",
+        "event": "meeting effectiveness review - operations department",
+        "location": "Conference Room C"
+    },
+    {
+        "start_time": "2025-08-28 13:00:00",
+        "end_time": "2025-08-28 14:30:00",
+        "event": "meeting effectiveness review - hr department",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-08-15 07:00:00",
+        "end_time": "2025-08-15 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-15 18:00:00",
+        "end_time": "2025-08-15 19:30:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-16 07:00:00",
+        "end_time": "2025-08-16 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-16 18:00:00",
+        "end_time": "2025-08-16 19:30:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-17 07:00:00",
+        "end_time": "2025-08-17 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-17 18:00:00",
+        "end_time": "2025-08-17 19:30:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-18 07:00:00",
+        "end_time": "2025-08-18 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-18 18:00:00",
+        "end_time": "2025-08-18 19:30:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-19 07:00:00",
+        "end_time": "2025-08-19 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-19 18:00:00",
+        "end_time": "2025-08-19 19:30:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 17:00:00",
+        "event": "product development milestone - phase 1 complete",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-09-15 10:00:00",
+        "end_time": "2025-09-15 16:00:00",
+        "event": "beta testing launch",
+        "location": "Product Testing Lab"
+    },
+    {
+        "start_time": "2025-08-22 14:00:00",
+        "end_time": "2025-08-22 17:00:00",
+        "event": "team building event",
+        "location": "TBD - To be determined based on survey preferences"
+    },
+    {
+        "start_time": "2025-10-01 14:00:00",
+        "end_time": "2025-10-01 18:00:00",
+        "event": "marketing campaign kickoff",
+        "location": "Marketing Department"
+    },
+    {
+        "start_time": "2025-10-15 09:00:00",
+        "end_time": "2025-10-15 17:00:00",
+        "event": "pre-launch executive review",
+        "location": "Executive Boardroom"
+    },
+    {
+        "start_time": "2025-11-01 08:00:00",
+        "end_time": "2025-11-01 20:00:00",
+        "event": "official product launch event",
+        "location": "Grand Launch Venue"
+    },
+    {
+        "start_time": "2024-04-15 09:00:00",
+        "end_time": "2024-04-15 17:00:00",
+        "event": "product launch",
+        "location": "Main Conference Room"
+    },
+    {
+        "start_time": "2025-08-16 10:00:00",
+        "end_time": "2025-08-16 11:30:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Video Call"
+    },
+    {
+        "start_time": "2025-08-23 10:00:00",
+        "end_time": "2025-08-23 11:30:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Video Call"
+    },
+    {
+        "start_time": "2025-08-30 10:00:00",
+        "end_time": "2025-08-30 11:30:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Video Call"
+    },
+    {
+        "start_time": "2025-08-20 14:00:00",
+        "end_time": "2025-08-20 15:00:00",
+        "event": "project milestone: threatdet-6146 review",
+        "location": "Development Team Meeting Room"
+    },
+    {
+        "start_time": "2025-08-27 09:00:00",
+        "end_time": "2025-08-27 10:00:00",
+        "event": "project milestone: task generation bug fixes deployment",
+        "location": "Development Team Meeting Room"
+    },
+    {
+        "start_time": "2025-09-03 11:00:00",
+        "end_time": "2025-09-03 12:00:00",
+        "event": "project milestone: security attack scenarios implementation review",
+        "location": "Security Team Meeting Room"
+    },
+    {
+        "start_time": "2025-08-18 10:00:00",
+        "end_time": "2025-08-18 10:30:00",
+        "event": "mindfulness monday - guided meditation session",
+        "location": "Main Conference Room / Virtual"
+    },
+    {
+        "start_time": "2025-08-25 10:00:00",
+        "end_time": "2025-08-25 10:30:00",
+        "event": "mindfulness monday - stress reduction workshop",
+        "location": "Main Conference Room / Virtual"
+    },
+    {
+        "start_time": "2025-08-15 16:00:00",
+        "end_time": "2025-08-15 17:00:00",
+        "event": "fitness friday - yoga & stretching session",
+        "location": "Employee Wellness Room"
+    },
+    {
+        "start_time": "2025-08-22 16:00:00",
+        "end_time": "2025-08-22 17:00:00",
+        "event": "fitness friday - team walking challenge",
+        "location": "Outdoor Campus / Local Park"
+    },
+    {
+        "start_time": "2025-08-29 16:00:00",
+        "end_time": "2025-08-29 17:00:00",
+        "event": "fitness friday - nutrition & healthy cooking demo",
+        "location": "Employee Kitchen / Cafeteria"
+    },
+    {
+        "start_time": "2025-08-20 12:00:00",
+        "end_time": "2025-08-20 13:00:00",
+        "event": "wellness wednesday - mental health awareness workshop",
+        "location": "Training Room A"
+    },
+    {
+        "start_time": "2025-08-27 12:00:00",
+        "end_time": "2025-08-27 13:00:00",
+        "event": "wellness wednesday - work-life balance seminar",
+        "location": "Training Room A"
+    },
+    {
+        "start_time": "2025-08-14 10:00:00",
+        "end_time": "2025-08-14 11:00:00",
+        "event": "team meeting - asia pacific region",
+        "location": "Virtual Conference Room A"
+    },
+    {
+        "start_time": "2025-08-14 14:00:00",
+        "end_time": "2025-08-14 15:00:00",
+        "event": "team meeting - europe/middle east/africa",
+        "location": "Virtual Conference Room B"
+    },
+    {
+        "start_time": "2025-08-14 18:00:00",
+        "end_time": "2025-08-14 19:00:00",
+        "event": "team meeting - americas region",
+        "location": "Virtual Conference Room C"
+    },
+    {
+        "start_time": "2025-08-28 14:00:00",
+        "end_time": "2025-08-28 15:00:00",
+        "event": "performance review - john smith",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-09-15 10:00:00",
+        "end_time": "2025-09-15 11:00:00",
+        "event": "performance review - emily davis",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-10-15 09:00:00",
+        "end_time": "2025-10-15 10:00:00",
+        "event": "q4 performance review deadline",
+        "location": "HR Department"
+    },
+    {
+        "start_time": "2025-11-30 16:00:00",
+        "end_time": "2025-11-30 17:00:00",
+        "event": "annual performance review summary",
+        "location": "Executive Conference Room"
+    },
+    {
+        "start_time": "2025-08-18 09:00:00",
+        "end_time": "2025-08-18 09:30:00",
+        "event": "monday motivational post - instagram & facebook",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-19 11:00:00",
+        "end_time": "2025-08-19 11:30:00",
+        "event": "tuesday educational content - how-to tutorial",
+        "location": "All Social Platforms"
+    },
+    {
+        "start_time": "2025-08-20 13:00:00",
+        "end_time": "2025-08-20 13:30:00",
+        "event": "wednesday behind-the-scenes content",
+        "location": "Instagram Stories & LinkedIn"
+    },
+    {
+        "start_time": "2025-08-21 17:00:00",
+        "end_time": "2025-08-21 17:30:00",
+        "event": "thursday community highlights & ugc",
+        "location": "Instagram & Twitter"
+    },
+    {
+        "start_time": "2025-08-22 19:00:00",
+        "end_time": "2025-08-22 19:30:00",
+        "event": "friday entertainment & trending content",
+        "location": "TikTok & Instagram Reels"
+    },
+    {
+        "start_time": "2025-08-26 14:00:00",
+        "end_time": "2025-08-26 15:00:00",
+        "event": "weekly analytics review & strategy adjustment",
+        "location": "Team Meeting Room"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 10:00:00",
+        "event": "project alpha - kickoff meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-09-15 14:00:00",
+        "end_time": "2025-09-15 15:00:00",
+        "event": "project alpha - milestone 1 review",
+        "location": "Virtual Meeting"
+    },
+    {
+        "start_time": "2025-10-30 16:00:00",
+        "end_time": "2025-10-30 17:30:00",
+        "event": "project alpha - final delivery",
+        "location": "Client Office"
+    },
+    {
+        "start_time": "2025-08-22 11:00:00",
+        "end_time": "2025-08-22 12:00:00",
+        "event": "project beta - planning workshop",
+        "location": "Team Room"
+    },
+    {
+        "start_time": "2025-09-30 10:00:00",
+        "end_time": "2025-09-30 11:00:00",
+        "event": "project beta - mid-point checkpoint",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-11-15 13:00:00",
+        "end_time": "2025-11-15 15:00:00",
+        "event": "project beta - launch event",
+        "location": "Main Auditorium"
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2025-09-01 09:00:00",
+        "end_time": "2025-09-01 12:00:00",
+        "event": "product development kickoff",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-09-15 14:00:00",
+        "end_time": "2025-09-15 16:00:00",
+        "event": "mvp review milestone",
+        "location": "Executive Boardroom"
+    },
+    {
+        "start_time": "2025-10-01 10:00:00",
+        "end_time": "2025-10-01 17:00:00",
+        "event": "beta testing launch",
+        "location": "Testing Lab"
+    },
+    {
+        "start_time": "2025-10-15 13:00:00",
+        "end_time": "2025-10-15 15:00:00",
+        "event": "production readiness review",
+        "location": "Manufacturing Facility"
+    },
+    {
+        "start_time": "2025-11-01 09:00:00",
+        "end_time": "2025-11-01 18:00:00",
+        "event": "product launch event",
+        "location": "Grand Ballroom - Marriott Hotel"
+    },
+    {
+        "start_time": "2025-11-15 11:00:00",
+        "end_time": "2025-11-15 13:00:00",
+        "event": "30-day launch review",
+        "location": "Executive Conference Room"
+    },
+    {
+        "start_time": "2025-08-16 10:00:00",
+        "end_time": "2025-08-16 11:00:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Zoom"
+    },
+    {
+        "start_time": "2025-08-23 10:00:00",
+        "end_time": "2025-08-23 11:00:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Zoom"
+    },
+    {
+        "start_time": "2025-08-30 10:00:00",
+        "end_time": "2025-08-30 11:00:00",
+        "event": "weekly code review meeting",
+        "location": "Conference Room A / Zoom"
+    },
+    {
+        "start_time": "2025-08-28 14:00:00",
+        "end_time": "2025-08-28 15:00:00",
+        "event": "threatdet-6146 security simulation milestone review",
+        "location": "Project Room"
+    },
+    {
+        "start_time": "2025-09-05 15:00:00",
+        "end_time": "2025-09-05 16:00:00",
+        "event": "task generation system bug fix validation",
+        "location": "Development Lab"
+    },
+    {
+        "start_time": "2025-09-12 13:00:00",
+        "end_time": "2025-09-12 14:30:00",
+        "event": "mcp toolkit integration testing milestone",
+        "location": "Testing Environment"
+    },
+    {
+        "start_time": "2024-04-15 09:00:00",
+        "end_time": "2024-04-15 17:00:00",
+        "event": "product launch",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-18 10:00:00",
+        "end_time": "2025-08-18 10:30:00",
+        "event": "weekly team standup",
+        "location": "Meeting Room B"
+    },
+    {
+        "start_time": "2025-08-25 10:00:00",
+        "end_time": "2025-08-25 10:30:00",
+        "event": "weekly team standup",
+        "location": "Meeting Room B"
+    },
+    {
+        "start_time": "2025-09-01 14:00:00",
+        "end_time": "2025-09-01 15:30:00",
+        "event": "monthly planning meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-15 09:00:00",
+        "end_time": "2025-08-15 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Virtual"
+    },
+    {
+        "start_time": "2025-08-18 09:00:00",
+        "end_time": "2025-08-18 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Virtual"
+    },
+    {
+        "start_time": "2025-08-19 09:00:00",
+        "end_time": "2025-08-19 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Virtual"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Virtual"
+    },
+    {
+        "start_time": "2025-08-21 09:00:00",
+        "end_time": "2025-08-21 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Virtual"
+    },
+    {
+        "start_time": "2025-08-22 14:00:00",
+        "end_time": "2025-08-22 17:00:00",
+        "event": "team building event",
+        "location": "TBD - Based on survey preferences"
+    },
+    {
+        "start_time": "2025-08-18 09:00:00",
+        "end_time": "2025-08-18 10:00:00",
+        "event": "mindfulness monday - guided meditation session",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-08-25 09:00:00",
+        "end_time": "2025-08-25 10:00:00",
+        "event": "mindfulness monday - stress management workshop",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-09-01 09:00:00",
+        "end_time": "2025-09-01 10:00:00",
+        "event": "mindfulness monday - breathing techniques & relaxation",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-08-15 15:00:00",
+        "end_time": "2025-08-15 16:00:00",
+        "event": "fitness friday - group walking session",
+        "location": "Main Lobby (meet here)"
+    },
+    {
+        "start_time": "2025-08-22 15:00:00",
+        "end_time": "2025-08-22 16:00:00",
+        "event": "fitness friday - yoga & stretching class",
+        "location": "Gym / Conference Room B"
+    },
+    {
+        "start_time": "2025-08-29 15:00:00",
+        "end_time": "2025-08-29 16:00:00",
+        "event": "fitness friday - team sports & activities",
+        "location": "Outdoor Area / Gym"
+    },
+    {
+        "start_time": "2025-08-20 12:00:00",
+        "end_time": "2025-08-20 13:00:00",
+        "event": "wellness wednesday - nutrition & healthy eating workshop",
+        "location": "Cafeteria / Conference Room C"
+    },
+    {
+        "start_time": "2025-08-27 12:00:00",
+        "end_time": "2025-08-27 13:00:00",
+        "event": "wellness wednesday - mental health awareness session",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-14 16:00:00",
+        "end_time": "2025-08-14 17:00:00",
+        "event": "cross-regional coordination meeting",
+        "location": "Virtual Conference Room D"
+    },
+    {
+        "start_time": "2025-08-15 09:00:00",
+        "end_time": "2025-08-15 09:30:00",
+        "event": "morning motivation post - linkedin & instagram",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-15 12:00:00",
+        "end_time": "2025-08-15 12:15:00",
+        "event": "industry news share - twitter & linkedin",
+        "location": "Social Media Platforms"
+    },
+    {
+        "start_time": "2025-08-15 17:00:00",
+        "end_time": "2025-08-15 17:20:00",
+        "event": "behind-the-scenes content - instagram stories",
+        "location": "Instagram"
+    },
+    {
+        "start_time": "2025-08-16 10:00:00",
+        "end_time": "2025-08-16 10:30:00",
+        "event": "educational content - blog post promotion",
+        "location": "All Platforms"
+    },
+    {
+        "start_time": "2025-08-16 15:30:00",
+        "end_time": "2025-08-16 16:00:00",
+        "event": "user-generated content feature",
+        "location": "Instagram & Facebook"
+    },
+    {
+        "start_time": "2025-08-17 11:00:00",
+        "end_time": "2025-08-17 11:15:00",
+        "event": "weekend engagement post",
+        "location": "All Platforms"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 10:00:00",
+        "event": "project alpha - requirements review",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-30 14:00:00",
+        "end_time": "2025-08-30 15:00:00",
+        "event": "project alpha - design phase deadline",
+        "location": "Design Team Office"
+    },
+    {
+        "start_time": "2025-09-15 11:00:00",
+        "end_time": "2025-09-15 12:00:00",
+        "event": "project beta - kickoff meeting",
+        "location": "Main Conference Room"
+    },
+    {
+        "start_time": "2025-10-01 16:00:00",
+        "end_time": "2025-10-01 17:00:00",
+        "event": "project alpha - final delivery",
+        "location": "Client Office"
+    },
+    {
+        "start_time": "2025-10-15 13:00:00",
+        "end_time": "2025-10-15 14:00:00",
+        "event": "project beta - mid-phase review",
+        "location": "Virtual Meeting"
+    },
+    {
+        "start_time": "2025-08-21 14:00:00",
+        "end_time": "2025-08-21 16:00:00",
+        "event": "weekly content review session",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-28 14:00:00",
+        "end_time": "2025-08-28 16:00:00",
+        "event": "weekly content review session",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2024-05-20 10:00:00",
+        "end_time": "2024-05-20 11:30:00",
+        "event": "ai innovation summit - keynote session",
+        "location": "Main Conference Hall"
+    },
+    {
+        "start_time": "2025-08-18 07:00:00",
+        "end_time": "2025-08-18 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-18 18:00:00",
+        "end_time": "2025-08-18 19:00:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-19 07:00:00",
+        "end_time": "2025-08-19 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-19 18:00:00",
+        "end_time": "2025-08-19 19:00:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-20 07:00:00",
+        "end_time": "2025-08-20 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-20 18:00:00",
+        "end_time": "2025-08-20 19:00:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 10:30:00",
+        "event": "meeting effectiveness review - engineering department",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-21 14:00:00",
+        "end_time": "2025-08-21 15:30:00",
+        "event": "meeting effectiveness review - marketing department",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-08-22 11:00:00",
+        "end_time": "2025-08-22 12:30:00",
+        "event": "meeting effectiveness review - sales department",
+        "location": "Conference Room C"
+    },
+    {
+        "start_time": "2025-08-23 10:00:00",
+        "end_time": "2025-08-23 11:30:00",
+        "event": "meeting effectiveness review - hr department",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-26 15:00:00",
+        "end_time": "2025-08-26 16:30:00",
+        "event": "meeting effectiveness review - finance department",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-03-15 09:00:00",
+        "end_time": "2025-03-15 17:00:00",
+        "event": "annual company meeting",
+        "location": "Company Headquarters"
+    },
+    {
+        "start_time": "2025-08-16 10:00:00",
+        "end_time": "2025-08-16 11:00:00",
+        "event": "weekly code review meeting",
+        "location": "Development Team Room"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 11:00:00",
+        "event": "product development kickoff meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-23 10:00:00",
+        "end_time": "2025-08-23 11:00:00",
+        "event": "weekly code review meeting",
+        "location": "Development Team Room"
+    },
+    {
+        "start_time": "2025-08-30 14:00:00",
+        "end_time": "2025-08-30 16:00:00",
+        "event": "alpha version release & testing",
+        "location": "Development Lab"
+    },
+    {
+        "start_time": "2025-08-30 10:00:00",
+        "end_time": "2025-08-30 11:00:00",
+        "event": "weekly code review meeting",
+        "location": "Development Team Room"
+    },
+    {
+        "start_time": "2025-09-10 10:00:00",
+        "end_time": "2025-09-10 12:00:00",
+        "event": "risk assessment review meeting",
+        "location": "Executive Boardroom"
+    },
+    {
+        "start_time": "2025-09-01 09:00:00",
+        "end_time": "2025-09-01 17:00:00",
+        "event": "threatdet-6146 ransomware simulation release",
+        "location": "Security Lab"
+    },
+    {
+        "start_time": "2025-09-20 09:00:00",
+        "end_time": "2025-09-20 17:00:00",
+        "event": "beta version launch & market testing",
+        "location": "Marketing Department"
+    },
+    {
+        "start_time": "2025-09-15 14:00:00",
+        "end_time": "2025-09-15 16:00:00",
+        "event": "security benchmark review - zenity labs integration",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-10-05 13:00:00",
+        "end_time": "2025-10-05 15:00:00",
+        "event": "executive strategy presentation",
+        "location": "Executive Conference Room"
+    },
+    {
+        "start_time": "2025-10-01 09:00:00",
+        "end_time": "2025-10-01 17:00:00",
+        "event": "q4 security tools release",
+        "location": "Development Center"
+    },
+    {
+        "start_time": "2025-10-15 10:00:00",
+        "end_time": "2025-10-15 18:00:00",
+        "event": "official product launch event",
+        "location": "Convention Center"
+    },
+    {
+        "start_time": "2025-10-25 14:00:00",
+        "end_time": "2025-10-25 16:00:00",
+        "event": "post-launch performance review",
+        "location": "Executive Boardroom"
+    },
+    {
+        "start_time": "2024-04-15 09:00:00",
+        "end_time": "2024-04-15 17:00:00",
+        "event": "product launch",
+        "location": "Main Conference Room"
+    },
+    {
+        "start_time": "2025-08-18 10:00:00",
+        "end_time": "2025-08-18 11:00:00",
+        "event": "weekly team meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-25 10:00:00",
+        "end_time": "2025-08-25 11:00:00",
+        "event": "weekly team meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-09-01 10:00:00",
+        "end_time": "2025-09-01 11:00:00",
+        "event": "weekly team meeting",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-15 09:00:00",
+        "end_time": "2025-08-15 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Teams"
+    },
+    {
+        "start_time": "2025-08-18 09:00:00",
+        "end_time": "2025-08-18 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Teams"
+    },
+    {
+        "start_time": "2025-08-19 09:00:00",
+        "end_time": "2025-08-19 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Teams"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Teams"
+    },
+    {
+        "start_time": "2025-08-21 09:00:00",
+        "end_time": "2025-08-21 09:30:00",
+        "event": "daily standup",
+        "location": "Conference Room / Teams"
+    },
+    {
+        "start_time": "2025-08-22 14:00:00",
+        "end_time": "2025-08-22 17:00:00",
+        "event": "team building event",
+        "location": "TBD"
+    },
+    {
+        "start_time": "2025-08-18 09:00:00",
+        "end_time": "2025-08-18 09:30:00",
+        "event": "mindfulness monday - guided meditation session",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-08-22 15:00:00",
+        "end_time": "2025-08-22 16:00:00",
+        "event": "fitness friday - group fitness class",
+        "location": "Company Gym / Outdoor Area"
+    },
+    {
+        "start_time": "2025-08-25 09:00:00",
+        "end_time": "2025-08-25 09:30:00",
+        "event": "mindfulness monday - stress reduction workshop",
+        "location": "Conference Room B / Virtual"
+    },
+    {
+        "start_time": "2025-08-29 15:00:00",
+        "end_time": "2025-08-29 16:00:00",
+        "event": "fitness friday - walking group & team building",
+        "location": "Local Park / Company Grounds"
+    },
+    {
+        "start_time": "2025-09-01 09:00:00",
+        "end_time": "2025-09-01 09:30:00",
+        "event": "mindfulness monday - mindful breathing & yoga",
+        "location": "Conference Room A / Virtual"
+    },
+    {
+        "start_time": "2025-09-05 15:00:00",
+        "end_time": "2025-09-05 16:00:00",
+        "event": "fitness friday - fitness challenge kickoff",
+        "location": "Company Gym / Outdoor Area"
+    },
+    {
+        "start_time": "2024-03-15 14:00:00",
+        "end_time": "2024-03-15 15:00:00",
+        "event": "team meeting",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-16 10:00:00",
+        "end_time": "2024-03-16 11:00:00",
+        "event": "project review",
+        "location": ""
+    },
+    {
+        "start_time": "2024-03-17 15:30:00",
+        "end_time": "2024-03-17 16:30:00",
+        "event": "client call",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-14 20:00:00",
+        "end_time": "2025-08-14 21:00:00",
+        "event": "global leadership sync meeting",
+        "location": "Virtual Conference Room E"
+    },
+    {
+        "start_time": "2025-08-15 09:00:00",
+        "end_time": "2025-08-15 10:00:00",
+        "event": "weekly content planning session",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-16 11:00:00",
+        "end_time": "2025-08-16 11:30:00",
+        "event": "instagram stories content creation",
+        "location": "Creative Studio"
+    },
+    {
+        "start_time": "2025-08-17 14:00:00",
+        "end_time": "2025-08-17 14:30:00",
+        "event": "linkedin professional content post",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-18 10:00:00",
+        "end_time": "2025-08-18 11:00:00",
+        "event": "weekly analytics review",
+        "location": "Marketing Department"
+    },
+    {
+        "start_time": "2025-08-19 13:00:00",
+        "end_time": "2025-08-19 13:15:00",
+        "event": "facebook community engagement",
+        "location": ""
+    },
+    {
+        "start_time": "2025-08-20 15:00:00",
+        "end_time": "2025-08-20 16:00:00",
+        "event": "content performance analysis",
+        "location": "Data Analytics Room"
+    },
+    {
+        "start_time": "2025-08-20 09:00:00",
+        "end_time": "2025-08-20 10:00:00",
+        "event": "project alpha - requirements review",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-25 14:00:00",
+        "end_time": "2025-08-25 15:00:00",
+        "event": "project beta - design phase kickoff",
+        "location": "Design Studio"
+    },
+    {
+        "start_time": "2025-09-05 16:00:00",
+        "end_time": "2025-09-05 17:00:00",
+        "event": "project alpha - development milestone",
+        "location": "Dev Team Room"
+    },
+    {
+        "start_time": "2025-09-15 11:00:00",
+        "end_time": "2025-09-15 12:00:00",
+        "event": "project gamma - planning session",
+        "location": "Meeting Room B"
+    },
+    {
+        "start_time": "2025-09-30 10:00:00",
+        "end_time": "2025-09-30 11:30:00",
+        "event": "project beta - testing phase review",
+        "location": "QA Lab"
+    },
+    {
+        "start_time": "2025-10-15 15:00:00",
+        "end_time": "2025-10-15 16:00:00",
+        "event": "project alpha - final delivery",
+        "location": "Client Office"
+    },
+    {
+        "start_time": "2025-08-21 09:00:00",
+        "end_time": "2025-08-21 11:00:00",
+        "event": "weekly watering",
+        "location": "Community Garden"
+    },
+    {
+        "start_time": "2025-08-28 09:00:00",
+        "end_time": "2025-08-28 11:00:00",
+        "event": "weekly watering",
+        "location": "Community Garden"
+    },
+    {
+        "start_time": "2025-09-01 08:00:00",
+        "end_time": "2025-09-01 10:00:00",
+        "event": "monthly soil testing",
+        "location": "Community Garden"
+    },
+    {
+        "start_time": "2024-05-20 10:00:00",
+        "end_time": "2024-05-20 11:00:00",
+        "event": "ai innovation summit",
+        "location": "Main Conference Hall"
+    },
+    {
+        "start_time": "2025-08-19 07:00:00",
+        "end_time": "2025-08-19 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-19 18:00:00",
+        "end_time": "2025-08-19 19:30:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-21 07:00:00",
+        "end_time": "2025-08-21 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-21 18:00:00",
+        "end_time": "2025-08-21 19:30:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-23 07:00:00",
+        "end_time": "2025-08-23 08:00:00",
+        "event": "morning yoga",
+        "location": "Studio A"
+    },
+    {
+        "start_time": "2025-08-23 18:00:00",
+        "end_time": "2025-08-23 19:30:00",
+        "event": "evening strength training",
+        "location": "Weight Room"
+    },
+    {
+        "start_time": "2025-08-19 09:00:00",
+        "end_time": "2025-08-19 10:30:00",
+        "event": "meeting effectiveness review - engineering department",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-20 14:00:00",
+        "end_time": "2025-08-20 15:30:00",
+        "event": "meeting effectiveness review - sales department",
+        "location": "Conference Room B"
+    },
+    {
+        "start_time": "2025-08-21 10:00:00",
+        "end_time": "2025-08-21 11:30:00",
+        "event": "meeting effectiveness review - marketing department",
+        "location": "Conference Room C"
+    },
+    {
+        "start_time": "2025-08-22 13:00:00",
+        "end_time": "2025-08-22 14:30:00",
+        "event": "meeting effectiveness review - hr department",
+        "location": "Conference Room A"
+    },
+    {
+        "start_time": "2025-08-23 11:00:00",
+        "end_time": "2025-08-23 12:30:00",
+        "event": "meeting effectiveness review - finance department",
+        "location": "Conference Room B"
+    }
+]
