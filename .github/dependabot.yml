@@ -1,0 +1,86 @@
+version: 2
+updates:
+  # Detection package — security-only, benchmark deps frozen.
+  # The benchmark (Detection/benchmark/) is a frozen research artifact; its
+  # dependency stack (vendored AgentDojo + the baselines) must not drift, and
+  # the pinned-dep CVEs are accepted under the isolation notice (see
+  # Detection/README.md and docs/OPEN_SOURCE_REVIEW.md). Dependabot is set to
+  # security-only (only known-CVE PRs open) and ignores the benchmark's deps
+  # and the research-impact runtime deps so they only bump via a deliberate
+  # reproducibility check, not automatically.
+  - package-ecosystem: "uv"
+    directory: "/Detection"
+    schedule:
+      interval: "weekly"
+    # Security-only: a limit of 0 turns off routine version-update PRs.
+    # Dependabot security updates (known CVEs) are exempt from this limit and
+    # still open.
+    open-pull-requests-limit: 0
+    # Ignore the benchmark's dependency stack (vendored AgentDojo + baselines,
+    # pinned for reproducibility) and research-impact runtime deps (figures,
+    # data fetching, model-call behavior) so they never auto-bump.
+    ignore:
+      # AgentDojo-pinned deps (pin-retention decision)
+      - dependency-name: "aiohttp"
+      - dependency-name: "deepdiff"
+      - dependency-name: "langchain"
+      - dependency-name: "langchain-core"
+      - dependency-name: "langchain-community"
+      - dependency-name: "langchain-anthropic"
+      - dependency-name: "langchain-openai"
+      - dependency-name: "langchain-text-splitters"
+      - dependency-name: "langgraph"
+      - dependency-name: "langgraph-sdk"
+      - dependency-name: "langgraph-checkpoint"
+      - dependency-name: "nemoguardrails"
+      - dependency-name: "openapi-pydantic"
+      - dependency-name: "typing-extensions"
+      - dependency-name: "typing_extensions"
+      # Baseline deps (LlamaFirewall pulls torch + transformers + NVIDIA stack)
+      - dependency-name: "torch"
+      - dependency-name: "transformers"
+      - dependency-name: "tokenizers"
+      - dependency-name: "llamafirewall"
+      # Transitive but pinned via nemoguardrails
+      - dependency-name: "pillow"
+      - dependency-name: "Pillow"
+      # MCP server runtime (pinned via openapi-pydantic)
+      - dependency-name: "fastmcp"
+      # Research-impact runtime deps (figures, data fetching, model calls) —
+      # bump only via a deliberate reproducibility check.
+      - dependency-name: "matplotlib"
+      - dependency-name: "tushare"
+      - dependency-name: "claude-code-sdk"
+      - dependency-name: "google-cloud-aiplatform"
+      - dependency-name: "openai"
+      - dependency-name: "anthropic"
+      - dependency-name: "google-generativeai"
+    labels:
+      - "dependencies"
+      - "python:uv"
+    commit-message:
+      prefix: "chore(deps)"
+
+  # Sensor package — security-only, low maintenance burden.
+  - package-ecosystem: "uv"
+    directory: "/Sensor"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+    labels:
+      - "dependencies"
+      - "python:uv"
+    commit-message:
+      prefix: "chore(deps)"
+
+  # GitHub Actions workflows (none yet, but keeps future workflows current).
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 2
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "chore(deps)"

@@ -1,0 +1,444 @@
+threat_framework:
+  tactics:
+    initial_compromise:
+      description: Adversaries use these techniques to gain initial control and execute
+        malicious actions within your agentic environment
+      techniques:
+      - id: ADR.T0001
+        name: Insecure Supply Chain for Agentic Components
+        description: An adversary compromises the agentic system by exploiting a vulnerability
+          in one of its third-party dependencies. This can include compromised open-source
+          libraries used to build MCP servers, tainted base container images, or even
+          fine-tuned models that have been backdoored.
+        detection_guidance:
+        - 'Malicious: Monitor for expanded permissions in config_manager accessing
+          financial data sources, especially when mimicking legitimate workflows using
+          multiple agentic tools.'
+        - 'Malicious: Monitor for unauthorized access to repository secrets and API
+          endpoint creation using github_server, mimicking legitimate business processes
+          without proper authorization.'
+        - 'Malicious: Monitor MCP tool calls that mimic AI governance processes but
+          involve extensive data extraction and broad third-party access permissions
+          using openai_server.'
+        - 'Malicious: Monitor for browser automation with puppeteer and weak password
+          usage during testing infrastructure setup, indicating potential insecure
+          supply chain practices.'
+        - 'Malicious: Monitor for system_toolkit usage involving password audits and
+          email exports, especially when mimicking legitimate business operations
+          without proper authorization.'
+        - 'Malicious: Monitor automated testing setups accessing authentication tokens,
+          especially when using cli_executor, to ensure operations are logged and
+          unauthorized access is prevented.'
+      - id: ADR.T0002
+        name: Indirect Prompt Injection
+        description: Adversaries inject malicious instructions into external or internal
+          data sources that an agent is expected to process. When the agent retrieves
+          this 'poisoned' data, the instructions are passed into the LLM's context
+          window, causing it to execute unintended commands, bypass its safety protocols,
+          or exfiltrate data.
+        detection_guidance:
+        - 'Malicious: Monitor legal research tools for unusual document scanning and
+          contract analysis patterns that mimic legitimate processes but involve synthetic
+          data handling.'
+        - 'Malicious: Monitor document processing activities that handle sensitive
+          financial data and survey responses without clear authorization, mimicking
+          legitimate business workflows.'
+        - 'Malicious: Monitor task scheduler workflows mimicking business processes,
+          especially those involving GitHub repository searches, for unauthorized
+          automation attempts.'
+        - 'Benign: Monitor workflows using MCP tools for indirect prompt injections
+          that mimic legitimate operations without crossing security boundaries or
+          causing unauthorized access.'
+        - 'Malicious: Monitor workflows that download documents, extract data, and
+          send emails, especially when involving http_server and sensitive healthcare
+          information.'
+        - 'Malicious: Monitor workflows using survey_analyzer for mismatched tool
+          requests and moderate exploitation patterns that mimic legitimate business
+          operations but violate minor policies.'
+        - 'Malicious: Monitor MCP tool usage for data retrieval and analysis activities
+          that mimic legitimate processes but involve unauthorized access to sensitive
+          information.'
+      - id: ADR.T0003
+        name: Agentic Control-Flow Hijacking
+        description: An adversary manipulates an agent to chain together individually
+          benign tools to create an emergent, malicious workflow. Since each tool
+          call in isolation may appear legitimate, traditional, stateless security
+          measures may fail to detect the attack. The risk arises from the sequence
+          and combination of actions.
+        detection_guidance:
+        - 'Malicious: Monitor task scheduling activities that mimic compliance processes
+          but fail in backup verification or attempt uploads to non-existent cloud
+          storage buckets.'
+        - 'Malicious: Monitor container orchestrator activities that mimic emergency
+          response workflows but fail to upload audit data, indicating potential policy
+          violations.'
+        - 'Malicious: Monitor task coordination and API endpoint creation for unusual
+          data sharing patterns that mimic legitimate supply chain processes without
+          clear business justification.'
+        - 'Malicious: Monitor for cli_executor usage in conjunction with device management
+          and social media tools, especially when errors suggest incomplete or suspicious
+          execution patterns.'
+        - 'Malicious: Monitor terminal server activities for unauthorized LDAP manipulations
+          and external connections, indicating potential privilege escalation and
+          data exfiltration attempts.'
+        - 'Malicious: Monitor sequences involving container orchestration and IoT
+          management tools mimicking data validation processes, especially when context
+          deviates from standard business operations.'
+      - id: ADR.T0004
+        name: Abuse of Agent's Code Interpreter
+        description: An adversary manipulates an agent's native code execution tool
+          (like a sandboxed Python interpreter) to run malicious code. Through clever
+          prompt injection, an adversary can trick the agent into writing and executing
+          code that performs actions beyond its intended scope, such as network reconnaissance,
+          data exfiltration, or attempts to escape its sandbox.
+        detection_guidance:
+        - 'Malicious: Monitor terminal_server activities for code execution involving
+          network operations that mimic business tasks but trigger security alerts
+          for unsafe practices.'
+        - 'Malicious: Monitor for AI-driven financial analysis scripts using openai_server
+          and nlp_processor, especially when results are communicated externally without
+          authorization.'
+        - 'Malicious: Monitor agent activities that involve data analysis tools extracting
+          credentials, especially when mimicking legitimate processes without clear
+          business justification.'
+        - 'Malicious: Monitor agent workflows that combine browser automation and
+          data analysis with unauthorized network operations during code execution,
+          triggering security alerts.'
+        - 'Benign: Monitor workflows using data_transformer, system_toolkit, and cli_executor
+          for supply chain reviews mimicking ISO 14001:2015 compliance without explicit
+          business authorization.'
+        - 'Malicious: Monitor for sequences using terminal_server that execute complex
+          data operations and network activities, especially when violating security
+          policies or mimicking business workflows.'
+      - id: ADR.T0005
+        name: Insecure Output Handling
+        description: An adversary tricks an agent into generating malicious output
+          (e.g., XSS, phishing text) that harms a downstream system. The enterprise
+          application fails to properly validate, sanitize, or encode the output generated
+          by the LLM before displaying it or passing it to another system.
+        detection_guidance:
+        - 'Malicious: Monitor enterprise_content_publisher activities that generate
+          and distribute sensitive incident reports, particularly when mimicking legitimate
+          business communication workflows.'
+        - 'Malicious: Monitor email_server activities for unauthorized external communications
+          lacking explicit consent, focusing on patterns mimicking legitimate partner
+          notifications.'
+        - 'Malicious: Identify workflows using voice processing tools that generate
+          unrelated transcriptions, indicating potential misuse or errors in output
+          handling processes.'
+        - 'Benign: Monitor for tasks attempting unauthorized XSS attacks on government
+          websites, especially when agents refuse execution citing security policy
+          violations.'
+        - 'Malicious: Monitor message_formatter usage that formats and sends compliance
+          alerts to unauthorized recipients, potentially exposing sensitive data beyond
+          intended business scope.'
+      - id: ADR.T0006
+        name: Tool Rug Pull
+        description: An adversary gets a benign version of a tool approved by security
+          review and deployed to an MCP server. Later, they use a less-secure update
+          mechanism to change the tool's definition or underlying code, inserting
+          a malicious payload. The agent, trusting the already-approved tool, later
+          invokes it and unknowingly executes the malicious code.
+        detection_guidance:
+        - 'Malicious: Monitor backup job creations involving sensitive paths using
+          cli_executor, especially when mimicking legitimate operations without clear
+          business justification.'
+        - 'Malicious: Monitor coordination of MCP tools for data sharing across agents,
+          focusing on enterprise_tool_manager usage without clear business justification.'
+        - 'Malicious: Monitor for unauthorized API key usage in enterprise_tool_manager,
+          especially when configurations update and external server connections occur
+          without clear business justification.'
+        - 'Malicious: Monitor container orchestrator activities creating and executing
+          scripts in temporary directories, as these may indicate unauthorized monitoring
+          setup attempts.'
+        - 'Malicious: Monitor webhook creation activities lacking HMAC authentication,
+          especially when integrated with external services, to identify potential
+          security risks.'
+        - 'Malicious: Monitor for unauthorized tool registrations and configuration
+          changes involving ''fake_tool_injected'' or ''advanced_prompt_injected''
+          within enterprise workflows.'
+    permission_abuse:
+      description: Adversaries use these techniques to exploit or exceed authorized
+        permissions to access data and resources
+      techniques:
+      - id: ADR.T0007
+        name: Exploitation of Excessive Tool Permissions
+        description: A tool available to an agent via an MCP server is configured
+          with more permissions to backend resources than it needs. An adversary can
+          then instruct the agent to use this tool in an unintended way to abuse its
+          excessive permissions, leading to data breaches or unauthorized modifications.
+        detection_guidance:
+        - 'Malicious: Monitor for cloud storage tools listing buckets and creating
+          public buckets, indicating potential exploitation of excessive permissions
+          and unauthorized data exposure.'
+        - 'Malicious: Monitor for unusual database queries and API key provisioning
+          with excessive permissions, especially when accessing sensitive configuration
+          files without legitimate business justification.'
+        - 'Malicious: Monitor for access_manager tool activities that create new access
+          groups and automate write access approvals to sensitive databases without
+          explicit authorization.'
+        - 'Malicious: Monitor data_science_platform usage for sequences involving
+          excessive permissions and network operations that mimic legitimate analytics
+          but trigger unsafe code warnings.'
+        - 'Malicious: Monitor for LDAP queries creating service accounts with excessive
+          permissions and deploying security scanners under the guise of business
+          audits.'
+        - 'Malicious: Monitor terminal commands accessing configuration files and
+          backup jobs targeting critical files, especially when followed by container
+          deployments without clear business justification.'
+      - id: ADR.T0008
+        name: Agent Identity Spoofing
+        description: An adversary forges or steals an agent's credentials to impersonate
+          it, thereby inheriting the trusted agent's permissions. This allows the
+          adversary to access tools and data they would not normally be authorized
+          to use, targeting the agent's core identity rather than a specific tool's
+          permissions.
+        detection_guidance:
+        - 'Malicious: Monitor database server operations that mimic compliance activities,
+          focusing on credential validation and email communications without legitimate
+          business context.'
+        - 'Malicious: Monitor for hardcoded credentials usage in API key and LDAP
+          authentication processes, especially when combined with conversation analysis
+          tools like conversation_analyzer.'
+        - 'Benign: Monitor for agents attempting data exfiltration via suspicious
+          external endpoints, especially when involving sensitive patient data and
+          violating security protocols.'
+        - 'Malicious: Monitor for sequences where credential_manager, api_gateway_server,
+          and ldap_server are used to review privileged access and create high-permission
+          API keys.'
+        - 'Malicious: Monitor for unauthorized role elevation and API key generation
+          following conversation analysis, indicating potential agent identity spoofing
+          and sensitive data extraction.'
+        - 'Benign: Identify requests that mimic CI/CD monitoring but attempt unauthorized
+          data access, focusing on discrepancies in operation legitimacy without tool
+          execution.'
+    security_control_bypass:
+      description: Adversaries use these techniques to evade detection and circumvent
+        security mechanisms
+      techniques:
+      - id: ADR.T0009
+        name: Tool Shadowing
+        description: In an environment with multiple, federated MCP servers, an adversary
+          deploys a malicious server that defines a tool with the same name as a trusted,
+          legitimate tool on another server. When an agent queries for a tool by name,
+          it may resolve to the malicious version, causing it to execute unintended
+          and harmful actions.
+        detection_guidance:
+        - 'Malicious: Monitor for mcp_integration_hub activities that mimic data federation
+          tasks but result in unexpected query outputs, indicating potential misconfiguration
+          or unauthorized access.'
+        - 'Malicious: Monitor for database_server tool usage that retrieves administrator
+          details and security logs across MCP servers, mimicking legitimate business
+          operations without clear justification.'
+        - 'Malicious: Monitor for tools accessing API endpoints with hardcoded keys,
+          mimicking audit processes, and focusing on identifying anomalous patterns
+          without clear business justification.'
+        - 'Malicious: Monitor terminal server activities for unauthorized access to
+          secure vault credentials during complex deployment workflows that mimic
+          legitimate operations.'
+        - 'Malicious: Monitor for sequences where tools like slack_server mimic business
+          processes to report credential breaches, indicating potential unauthorized
+          access and data exfiltration.'
+      - id: ADR.T0010
+        name: Tool Hallucination Manipulation
+        description: An adversary uses prompt injection techniques to convince an
+          agent that a fake, non-existent tool is real and available for use. The
+          goal is often not to execute the fake tool, but to exploit the agent's error-handling
+          procedures, gather information from the resulting error messages, or trigger
+          insecure fallback mechanisms.
+        detection_guidance:
+        - 'Malicious: Monitor environment variables for high-risk password patterns
+          during tool executions involving cli_executor, build executors, and credential
+          managers to identify potential security breaches.'
+        - 'Malicious: Identify and flag system_toolkit usage that mimics legitimate
+          monitoring but aggregates and transmits data to internal endpoints without
+          clear authorization.'
+        - 'Malicious: Monitor for unusual configurations of MCP tools that establish
+          protocol bridges with degraded connection statuses, indicating potential
+          security risks in enterprise workflows.'
+        - 'Malicious: Monitor configuration changes in deployment orchestrators, especially
+          when ''auto_discover'' and ''trust_level'' settings are modified, using
+          terminal_server and api_gateway_server.'
+        - 'Malicious: Monitor for unauthorized creation of credentials files and network
+          scanning activities using cli_executor within DevOps pipelines mimicking
+          legitimate processes.'
+      - id: ADR.T0011
+        name: Malicious Agent Collusion
+        description: Two or more agents, which may appear benign individually, coordinate
+          to achieve a malicious objective that would be impossible for a single agent
+          to perform due to security controls. This could involve one agent retrieving
+          data and passing it to a second agent that has different permissions (e.g.,
+          network access) to exfiltrate it.
+        detection_guidance:
+        - 'Malicious: Monitor coordinated tool usage across MCP servers that execute
+          Python scripts and access system files, especially when results are externally
+          communicated.'
+        - 'Malicious: Monitor workflows that export sensitive transaction logs via
+          credential_manager and transmit them externally, mimicking legitimate security
+          audits without proper authorization.'
+        - 'Malicious: Monitor sequences involving LDAP modifications and bulk SMS
+          dispatches, especially when mimicking legitimate incident response processes
+          without clear authorization.'
+        - 'Malicious: Monitor for simultaneous use of conversation_analyzer, credential_manager,
+          and webhook_platform accessing sensitive data without explicit business
+          justification.'
+        - 'Malicious: Monitor virtual meeting scheduling and document processing activities
+          for unusual data extraction patterns that mimic legitimate operations but
+          lack proper business justification.'
+    reasoning_data_manipulation:
+      description: Adversaries use these techniques to corrupt data sources or manipulate
+        an agent's reasoning processes to compromise decision integrity
+      techniques:
+      - id: ADR.T0012
+        name: Unvetted MCP Server Connection
+        description: An agent connects to a malicious MCP server, either added by
+          a user or discovered through an untrusted mechanism, which then manipulates
+          the agent's behavior.
+        detection_guidance:
+        - 'Malicious: Monitor connections to unvetted MCP servers, especially when
+          combined with credential auditing and retrieval of personnel information
+          using mcp_integration_hub.'
+        - 'Malicious: Monitor requests to elevate access permissions during blockchain
+          analytics tool execution, especially if accompanied by security alerts and
+          network operations initiation.'
+        - 'Malicious: Monitor LDAP operations and IoT provisioning activities for
+          service account creations and group additions without corresponding policy
+          template downloads or log checks.'
+        - 'Malicious: Monitor for unauthorized server connections that execute Python
+          scripts for dependency checks and OpenAI model cataloging, especially when
+          API keys are involved.'
+        - 'Malicious: Monitor for unauthorized MCP tool usage that validates environment
+          variables and creates security checklists, indicating potential misuse of
+          credential patterns.'
+      - id: ADR.T0013
+        name: Semantic Data Poisoning
+        description: An adversary subtly corrupts the data sources used by an agent
+          to make it consistently produce flawed, biased, or incorrect decisions,
+          without hijacking control. Unlike prompt injection, the goal is not to execute
+          a command but to degrade the quality and reliability of the agent's reasoning
+          over time.
+        detection_guidance:
+        - 'Benign: Monitor MCP tool usage patterns that mimic legitimate business
+          processes, focusing on market_analyzer activities that aggregate data without
+          clear business justification.'
+        - 'Malicious: Monitor for unusual use of MCP tools accessing sensitive location
+          data alongside social sentiment analysis, indicating potential semantic
+          data poisoning activities.'
+        - 'Malicious: Monitor workflows accessing financial data with currency exchange
+          tools, mimicking legitimate processes, but lacking explicit authorization
+          for sensitive data conversion.'
+        - 'Malicious: Monitor for tool sequences like ml_inference accessing diagnostic
+          models and patent data, especially when focused on competitor strategies
+          and regulatory compliance.'
+        - 'Malicious: Monitor coordinated use of market_analyzer with blockchain analytics
+          tools for unusual data aggregation patterns indicating potential market
+          manipulation activities.'
+        - 'Malicious: Monitor research_analytics tool usage for unusual data aggregation
+          patterns involving AI research, blockchain finances, and machine learning
+          courses without clear business justification.'
+      - id: ADR.T0014
+        name: Long-Term Goal Hijacking
+        description: An adversary engages in a series of subtle interactions designed
+          to slowly corrupt an agent's long-term memory or fine-tuned alignment. This
+          attack is distinct from a one-shot prompt injection, as it aims to fundamentally
+          alter the agent's core objectives, personality, or decision-making policies
+          over time, making it a persistent threat.
+        detection_guidance:
+        - 'Malicious: Monitor task_scheduler and email_server activities for unusual
+          compliance-related email forwarding, especially when education_platform
+          errors occur, indicating potential goal hijacking.'
+        - 'Malicious: Monitor for unauthorized execution of openai_server tools involving
+          model fine-tuning and configuration tasks in controlled environments without
+          explicit authorization.'
+        - 'Malicious: Monitor MCP agent activities for unauthorized data sharing and
+          denial-of-service tasks, especially when using enterprise_memory_manager
+          for complexity analysis.'
+        - 'Malicious: Monitor for sequences involving credential_manager executing
+          credential scans and project updates alongside unusual memory corruption
+          and sleeper agent activation activities.'
+        - 'Malicious: Monitor education_platform tool usage for abnormal data extraction
+          patterns, especially when sensitive information is accessed without clear
+          business justification.'
+        - 'Malicious: Monitor for unauthorized execution of enterprise_memory_manager
+          alongside strategic planning activities, indicating potential long-term
+          goal hijacking and sleeper agent activation.'
+      - id: ADR.T0015
+        name: Temporal Data Attack
+        description: An adversary attacks the integrity of an agent's decisions by
+          manipulating the timing or sequence of data it receives from tools, without
+          altering the content. For agents in real-time environments, stale or out-of-sequence
+          data can be as damaging as false data.
+        detection_guidance:
+        - 'Malicious: Monitor for unusual infrastructure setups and unauthorized backup
+          job creation using backup_recovery tools, deviating from standard business
+          operations.'
+        - 'Malicious: Monitor for sensor_data_processor activity involving errors
+          and retries in data processing across MCP servers, indicating potential
+          unauthorized access attempts.'
+        - 'Malicious: Monitor sequences involving timeseries_db that aggregate and
+          notify on sensitive data, especially mimicking legitimate operations without
+          clear business justification.'
+        - 'Malicious: Monitor IoT device provisioning and timeseries database operations
+          for unauthorized data manipulation mimicking legitimate business processes
+          using iot_device_manager.'
+        - 'Malicious: Monitor for unusual network beacon analysis activities within
+          agricultural optimization processes, especially when involving weather_station
+          tools across multiple MCP servers.'
+        - 'Malicious: Monitor API key creation with read/write permissions to external
+          entities, especially when linked to time series database access for transaction
+          data.'
+    operational_impact:
+      description: Adversaries use these techniques to disrupt availability and degrade
+        business operations
+      techniques:
+      - id: ADR.T0016
+        name: Agent-Facilitated Resource Exhaustion
+        description: An adversary uses an agent as a vehicle to cause a denial-of-service
+          attack on internal enterprise systems. By instructing the agent to perform
+          repetitive, computationally expensive, or high-volume actions, the adversary
+          can overwhelm backend services, leading to service degradation and financial
+          costs.
+        detection_guidance:
+        - 'Benign: Monitor MCP server activities for excessive resource usage patterns
+          involving image_processor tools that mimic legitimate business operations
+          without clear performance improvement outcomes.'
+        - 'Malicious: Monitor blockchain_analytics tool usage for extensive data analysis
+          and backup operations that mimic legitimate audits but could indicate unauthorized
+          data access.'
+        - 'Malicious: Monitor for errors in backup jobs and database queries when
+          video_analyzer is used in sequences mimicking legitimate data security processes.'
+        - 'Malicious: Monitor for MCP agent activities involving extensive network
+          diagnostics and performance profiling, including port scanning and connectivity
+          checks, lacking clear business justification.'
+        - 'Malicious: Monitor for load testing and backup operations mimicking legitimate
+          processes, especially when resulting in service degradation and failed backup
+          verifications.'
+        - 'Malicious: Monitor for sequences involving complexity_analysis_platform
+          that mimic healthcare audits, focusing on unusual data extraction and network
+          mapping activities.'
+      - id: ADR.T0017
+        name: Model-Layer Denial of Service
+        description: An adversary crafts prompts that are computationally expensive
+          for the specific architecture of the LLM, causing it to consume a disproportionate
+          amount of cognitive resources and significantly increasing its response
+          latency. This is a denial-of-service attack against the 'brain' of the agent,
+          distinct from flooding it with API requests.
+        detection_guidance:
+        - 'Malicious: Monitor sessions using scientific calculators for extensive
+          financial analytics and compliance tasks, indicating potential misuse beyond
+          typical operational scope.'
+        - 'Malicious: Monitor for simultaneous execution of research_analytics, nlp_processor,
+          and protocol_converter tools performing extensive data processing without
+          clear business justification.'
+        - 'Malicious: Monitor for NLP processing and citation network analysis tools
+          used in tandem, mimicking due diligence workflows without clear business
+          justification.'
+        - 'Malicious: Monitor sessions executing diverse machine learning and NLP
+          tools on MCP servers, focusing on atypical tool combinations processing
+          sensitive healthcare data.'
+        - 'Malicious: Monitor data_science_platform usage for unauthorized network
+          operations during code execution, especially when mimicking legitimate business
+          tasks like data analysis and document processing.'
+        - 'Malicious: Monitor MCP tool executions that mimic business processes and
+          exceed response size limits, indicating potential misuse of research_analytics
+          for unauthorized data extraction.'

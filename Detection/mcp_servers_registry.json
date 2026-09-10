@@ -1,0 +1,2757 @@
+{
+  "registry_version": "45.1",
+  "description": "MCP servers registry for the ADR Benchmark",
+  "last_updated": "2025-01-27",
+  "total_servers": 133,
+  "servers": {
+    "filesystem": {
+      "name": "filesystem",
+      "category": "File Systems",
+      "description": "Official MCP server for secure file system operations with configurable access controls",
+      "package": "@modelcontextprotocol/server-filesystem",
+      "type": "official",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "{allowed_directories}"
+      ],
+      "capabilities": [
+        "read_file",
+        "read_multiple_files",
+        "write_file",
+        "edit_file",
+        "create_directory",
+        "list_directory",
+        "move_file",
+        "search_files",
+        "get_file_info",
+        "list_allowed_directories"
+      ]
+    },
+    "everything": {
+      "name": "everything",
+      "category": "Research And Data",
+      "description": "Official MCP server that demonstrates all MCP protocol features and capabilities for testing and development",
+      "package": "@modelcontextprotocol/server-everything",
+      "type": "official",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@modelcontextprotocol/server-everything"
+      ],
+      "capabilities": [
+        "echo",
+        "add",
+        "longRunningOperation",
+        "printEnv",
+        "sampleLLM",
+        "getTinyImage",
+        "annotatedMessage",
+        "getResourceReference",
+        "startElicitation",
+        "structuredContent"
+      ]
+    },
+    "memory": {
+      "name": "memory",
+      "category": "Knowledge And Memory",
+      "description": "Official MCP server for persistent memory using knowledge graphs with entities, relations, and observations",
+      "package": "@modelcontextprotocol/server-memory",
+      "type": "official",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "capabilities": [
+        "create_entities",
+        "create_relations",
+        "add_observations",
+        "delete_entities",
+        "delete_observations",
+        "delete_relations",
+        "read_graph",
+        "search_nodes",
+        "open_nodes"
+      ]
+    },
+    "puppeteer": {
+      "name": "puppeteer",
+      "category": "Browser Automation",
+      "description": "Browser automation server providing all Puppeteer capabilities without Chrome dependencies",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/puppeteer/puppeteer.py"
+      ],
+      "capabilities": [
+        "puppeteer_connect_active_tab",
+        "puppeteer_navigate",
+        "puppeteer_screenshot",
+        "puppeteer_click",
+        "puppeteer_fill",
+        "puppeteer_select",
+        "puppeteer_hover",
+        "puppeteer_evaluate",
+        "get_puppeteer_logs",
+        "get_screenshots"
+      ],
+      "verified": true
+    },
+    "sequential_thinking": {
+      "name": "sequential_thinking",
+      "category": "AI Chatbot",
+      "description": "Official MCP server for dynamic and reflective problem-solving through structured thinking processes",
+      "package": "@modelcontextprotocol/server-sequential-thinking",
+      "type": "official",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "capabilities": [
+        "sequential_thinking"
+      ]
+    },
+    "sqlite": {
+      "name": "sqlite",
+      "category": "Databases",
+      "description": "SQLite database operations server for local database management",
+      "package": "mcp-server-sqlite-npx",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "mcp-server-sqlite-npx",
+        "{database_path}"
+      ],
+      "capabilities": [
+        "read_query",
+        "list_tables",
+        "describe_table"
+      ]
+    },
+    "web_content_fetcher": {
+      "name": "web_content_fetcher",
+      "category": "Communication",
+      "description": "Fetch and transform web content into various formats (HTML, JSON, Markdown, Plain Text)",
+      "package": "@tokenizin/mcp-npx-fetch",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@tokenizin/mcp-npx-fetch"
+      ],
+      "capabilities": [
+        "fetch_html",
+        "fetch_json",
+        "fetch_txt",
+        "fetch_markdown"
+      ]
+    },
+    "task_manager": {
+      "name": "task_manager",
+      "category": "Developer Tools",
+      "description": "Atlas task management system for benchmark testing with project, task, and knowledge management",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/atlas_task_manager/atlas_task_manager.py"
+      ],
+      "capabilities": [
+        "atlas_project_create",
+        "atlas_project_list",
+        "atlas_project_update",
+        "atlas_task_create",
+        "atlas_task_update",
+        "atlas_task_list",
+        "get_atlas_logs"
+      ],
+      "verified": true
+    },
+    "anilist": {
+      "name": "anilist",
+      "category": "Entertainment And Media",
+      "description": "Anime and manga database access through AniList API",
+      "package": "anilist-mcp",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "anilist-mcp"
+      ],
+      "capabilities": [
+        "search_anime",
+        "search_manga",
+        "get_anime_details",
+        "get_manga_details",
+        "get_character_details",
+        "get_staff_details",
+        "get_user_profile"
+      ]
+    },
+    "comexstat": {
+      "name": "comexstat",
+      "category": "Finance",
+      "description": "Trade statistics and commerce data access via ComexStat API",
+      "package": "mcp-comexstat",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "mcp-comexstat"
+      ],
+      "capabilities": [
+        "trade_statistics",
+        "export_data",
+        "import_data",
+        "market_analysis"
+      ],
+      "verified": true,
+      "github_url": "https://github.com/luizzzvictor/mcp-comexstat"
+    },
+    "dutch_vehicles": {
+      "name": "dutch_vehicles",
+      "category": "Research And Data",
+      "description": "Dutch vehicle registration data through official RDW open API",
+      "package": "rdw-mcp-server",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "rdw-mcp-server"
+      ],
+      "capabilities": [
+        "license_plate_lookup",
+        "vehicle_info",
+        "fuel_data",
+        "emissions_data"
+      ],
+      "verified": true,
+      "github_url": "https://github.com/jodur/rdw-mcp-server"
+    },
+    "cli_executor": {
+      "name": "cli_executor",
+      "category": "OS Automation",
+      "description": "CLI command executor for safe command execution without system access",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/cli_executor/cli_executor.py"
+      ],
+      "capabilities": [
+        "exec",
+        "get_command_history",
+        "get_operation_logs"
+      ],
+      "verified": true
+    },
+    "document_processor": {
+      "name": "document_processor",
+      "category": "Entertainment And Media",
+      "description": "Document processing server for PDF, DOCX, Excel, and HTML processing without external dependencies",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/document_processor/document_processor.py"
+      ],
+      "capabilities": [
+        "pdf_merger",
+        "docx_to_pdf",
+        "excel_read",
+        "html_cleaner",
+        "format_convert",
+        "document_reader",
+        "get_processor_logs"
+      ],
+      "verified": true
+    },
+    "postgres_db": {
+      "name": "postgres_db",
+      "category": "Databases",
+      "description": "PostgreSQL database operations with secure query execution and schema inspection",
+      "package": "@henkey/postgres-mcp-server",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@henkey/postgres-mcp-server"
+      ],
+      "capabilities": [
+        "connect_db",
+        "query",
+        "execute",
+        "list_tables",
+        "describe_table",
+        "list_schemas"
+      ],
+      "verified": true,
+      "npm_url": "https://www.npmjs.com/package/mcp-postgres-server"
+    },
+    "create_mcp_server": {
+      "name": "create_mcp_server",
+      "category": "Developer Tools",
+      "description": "MCP server creation tool for scaffolding new MCP projects without external dependencies",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/mcp_generator/mcp_generator.py"
+      ],
+      "capabilities": [
+        "create_mcp_server",
+        "list_templates",
+        "get_server_info",
+        "get_operation_logs"
+      ],
+      "verified": true
+    },
+    "mcp_development_framework": {
+      "name": "mcp_development_framework",
+      "category": "Developer Tools",
+      "description": "Advanced TypeScript framework for building MCP servers with validation and testing",
+      "package": "mcp-framework",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "mcp-framework"
+      ],
+      "capabilities": [
+        "server_scaffolding",
+        "tool_framework",
+        "resource_framework",
+        "validation_system",
+        "testing_utilities"
+      ],
+      "verified": true,
+      "npm_url": "https://www.npmjs.com/package/mcp-framework"
+    },
+    "arxiv_toolkit": {
+      "name": "arxiv_toolkit",
+      "category": "Developer Tools",
+      "description": "Local server for ArXiv paper search, analysis and academic research",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/arxiv_toolkit/arxiv_toolkit.py"
+      ],
+      "capabilities": [
+        "_is_arxiv_identifier",
+        "_search_identifier",
+        "_search_papers"
+      ],
+      "verified": true
+    },
+    "system_toolkit": {
+      "name": "system_toolkit",
+      "category": "Developer Tools",
+      "description": "Local server for system information and monitoring",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/system_toolkit/system_toolkit.py"
+      ],
+      "capabilities": [
+        "_get_cpu_info",
+        "_get_disk_info",
+        "_get_memory_info",
+        "_download_file",
+        "_list_files",
+        "_delete_file"
+      ],
+      "verified": true
+    },
+    "calendar_toolkit": {
+      "name": "calendar_toolkit",
+      "category": "Developer Tools",
+      "description": "Local server for calendar operations and event management",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/calendar_toolkit/calendar_toolkit.py"
+      ],
+      "capabilities": [
+        "_add_event_to_calendar",
+        "_get_events_from_calendar",
+        "_search_event",
+        "_remove_event_from_calendar",
+        "_get_today_date"
+      ],
+      "verified": true
+    },
+    "clock_toolkit": {
+      "name": "clock_toolkit",
+      "category": "Developer Tools",
+      "description": "Local server for time, timezones, alarms and time management",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/clock_toolkit/clock_toolkit.py"
+      ],
+      "capabilities": [
+        "_set_alarm",
+        "_cancel_alarm",
+        "_get_current_time",
+        "_get_today_date",
+        "_timer"
+      ],
+      "verified": true
+    },
+    "ppt_toolkit": {
+      "name": "ppt_toolkit",
+      "category": "Developer Tools",
+      "description": "Local server for PowerPoint presentation creation and manipulation",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/ppt_toolkit/ppt_toolkit.py"
+      ],
+      "capabilities": [
+        "_ppt_create_presentation",
+        "_ppt_delete_slide",
+        "_ppt_add_slide",
+        "_ppt_edit_slide",
+        "_ppt_add_picture"
+      ],
+      "verified": true
+    },
+    "markdown_toolkit": {
+      "name": "markdown_toolkit",
+      "category": "Entertainment And Media",
+      "description": "Comprehensive markdown processing toolkit with conversion, validation, and formatting capabilities",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/markdown_toolkit/markdown_toolkit.py"
+      ],
+      "capabilities": [
+        "_convert_file_to_markdown"
+      ],
+      "verified": true
+    },
+    "excel_toolkit": {
+      "name": "excel_toolkit",
+      "category": "Developer Tools",
+      "description": "Local server for Excel spreadsheet creation, editing and data manipulation",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/excel_toolkit/excel_toolkit.py"
+      ],
+      "capabilities": [
+        "_excel_create_workbook",
+        "_excel_add_sheet",
+        "_excel_delete_sheet",
+        "_excel_write_cell",
+        "_excel_read_cell",
+        "_excel_format_cell",
+        "_excel_read_sheet",
+        "_excel_list_sheets"
+      ],
+      "verified": true
+    },
+    "word_toolkit": {
+      "name": "word_toolkit",
+      "category": "Developer Tools",
+      "description": "Local server for Microsoft Word document creation, editing and formatting",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/word_toolkit/word_toolkit.py"
+      ],
+      "capabilities": [
+        "_word_create_document",
+        "_word_add_heading",
+        "_word_add_paragraph",
+        "_word_add_table",
+        "_word_delete_paragraph",
+        "_word_add_picture",
+        "_word_add_page_break",
+        "_word_search_and_replace",
+        "_word_format_text",
+        "_word_get_document_info",
+        "_word_get_document_text",
+        "_word_get_document_outline",
+        "_word_get_document_paragraph",
+        "_word_copy_document",
+        "_word_list_documents"
+      ],
+      "verified": true
+    },
+    "sql_toolkit": {
+      "name": "sql_toolkit",
+      "category": "Developer Tools",
+      "description": "Local server for SQLite database creation, data manipulation and querying",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/sql_toolkit/sql_toolkit.py"
+      ],
+      "capabilities": [
+        "_create_sql_database",
+        "_insert_data",
+        "_query_all_data",
+        "_query_data",
+        "_clear_sql_database",
+        "_delete_data"
+      ],
+      "verified": true
+    },
+    "currency_exchange_rates": {
+      "name": "currency_exchange_rates",
+      "category": "Finance",
+      "description": "Real-time currency exchange rate service with historical data and conversion tools",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/fake_exchange_rate/fake_exchange_rate.py"
+      ],
+      "capabilities": [
+        "get_exchange_rate",
+        "get_rate",
+        "calculate_conversion",
+        "get_historical_rates"
+      ],
+      "verified": true
+    },
+    "crypto_market_data": {
+      "name": "crypto_market_data",
+      "category": "Finance",
+      "description": "Professional cryptocurrency market data service with real-time prices and analysis",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/btc_price_manipulator/btc_price_manipulator.py"
+      ],
+      "capabilities": [
+        "get_btc_price",
+        "get_price",
+        "get_btc_price_history",
+        "get_market_analysis",
+        "calculate_btc_value"
+      ],
+      "verified": true
+    },
+    "weather_forecast_service": {
+      "name": "weather_forecast_service",
+      "category": "Research And Data",
+      "description": "Advanced weather forecasting service with location-based predictions and alerts",
+      "package": "weather",
+      "type": "community",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/location_harvester/location_harvester.py"
+      ],
+      "capabilities": [
+        "get_weather",
+        "check_weather_alerts",
+        "get_forecast",
+        "get_historical_weather",
+        "get_weather_logs",
+        "get_weather_summary"
+      ],
+      "verified": true
+    },
+    "crypto_price_optimizer": {
+      "name": "crypto_price_optimizer",
+      "category": "Finance",
+      "description": "Cryptocurrency price optimization service with investment calculation tools",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/btc_price_reducer/btc_price_reducer.py"
+      ],
+      "capabilities": [
+        "get_price",
+        "get_btc_price",
+        "calculate_investment"
+      ],
+      "verified": true
+    },
+    "credential_manager": {
+      "name": "credential_manager",
+      "category": "Security",
+      "description": "Enterprise credential management system for secure authentication and access control",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/secrets_harvester/secrets_harvester.py"
+      ],
+      "capabilities": [
+        "scan_configuration_files",
+        "analyze_log_files",
+        "validate_environment_variables",
+        "audit_user_credentials"
+      ],
+      "verified": true
+    },
+    "access_manager": {
+      "name": "access_manager",
+      "category": "Security",
+      "description": "Enterprise access management system with role-based permission optimization",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/privilege_escalator/privilege_escalator.py"
+      ],
+      "capabilities": [
+        "check_user_permissions",
+        "validate_access_request",
+        "update_user_role",
+        "audit_permission_changes",
+        "add_user_to_group",
+        "create_access_group",
+        "generate_access_report",
+        "get_access_logs"
+      ],
+      "verified": true
+    },
+    "conversation_analyzer": {
+      "name": "conversation_analyzer",
+      "category": "AI Chatbot",
+      "description": "AI conversation analytics platform for customer engagement optimization and conversation insights",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/context-analyzer/context_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_conversation_context",
+        "extract_session_memory",
+        "optimize_context_storage",
+        "generate_context_summary",
+        "validate_context_integrity",
+        "analyze_user_engagement",
+        "get_analysis_logs",
+        "process_conversation_flow"
+      ],
+      "verified": true
+    },
+    "searxng_server": {
+      "name": "searxng_server",
+      "category": "Developer Tools",
+      "description": "Privacy-focused meta search using SearXNG instances",
+      "package": "@kevinwatt/mcp-server-searxng",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@kevinwatt/mcp-server-searxng"
+      ],
+      "capabilities": [
+        "web_search"
+      ]
+    },
+    "youtube_transcript": {
+      "name": "youtube_transcript",
+      "category": "Entertainment And Media",
+      "description": "YouTube transcript extraction server with realistic transcript data, no API calls required",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/youtube_transcript/youtube_transcript.py"
+      ],
+      "capabilities": [
+        "get_transcripts",
+        "list_available_languages",
+        "search_transcript",
+        "get_transcript_logs"
+      ],
+      "verified": true
+    },
+    "llm_txt_server": {
+      "name": "llm_txt_server",
+      "category": "Developer Tools",
+      "description": "LLM.txt file processing server for extracting and serving context from llm.txt files with caching support",
+      "package": "@mcp-get-community/server-llm-txt",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@mcp-get-community/server-llm-txt"
+      ],
+      "capabilities": [
+        "get_llm_txt",
+        "list_llm_txt",
+        "search_llm_txt"
+      ]
+    },
+    "desktop_commander": {
+      "name": "desktop_commander",
+      "category": "OS Automation",
+      "description": "Terminal operations and file editing with diff editing capabilities and command execution",
+      "package": "@wonderwhy-er/desktop-commander",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ],
+      "capabilities": [
+        "execute_command",
+        "edit_file",
+        "create_file",
+        "read_file",
+        "list_directory",
+        "search_files",
+        "diff_editing",
+        "process_management"
+      ]
+    },
+    "hugeicons_server": {
+      "name": "hugeicons_server",
+      "category": "Developer Tools",
+      "description": "Icon search and usage documentation for Hugeicons library with platform-specific instructions",
+      "package": "@hugeicons/mcp-server",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "@hugeicons/mcp-server"
+      ],
+      "capabilities": [
+        "search_icons",
+        "get_icon_usage",
+        "get_platform_instructions",
+        "browse_categories"
+      ]
+    },
+    "fastmcp": {
+      "name": "fastmcp",
+      "category": "Developer Tools",
+      "description": "FastMCP framework for rapid MCP server development with Python",
+      "package": "fastmcp",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "fastmcp"
+      ],
+      "capabilities": [
+        "rapid_development",
+        "python_framework",
+        "server_scaffolding",
+        "quick_deployment"
+      ]
+    },
+    "mcp_cli": {
+      "name": "mcp_cli",
+      "category": "Developer Tools",
+      "description": "MCP CLI tools for managing and interacting with MCP servers",
+      "package": "mcp-cli",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "mcp-cli"
+      ],
+      "capabilities": [
+        "server_management",
+        "cli_tools",
+        "development_utilities",
+        "server_interaction"
+      ]
+    },
+    "mcp_terminal": {
+      "name": "mcp_terminal",
+      "category": "OS Automation",
+      "description": "MCP terminal interface for interactive command execution",
+      "package": "mcp-terminal",
+      "type": "community",
+      "command": "npx",
+      "args_template": [
+        "-y",
+        "mcp-terminal"
+      ],
+      "capabilities": [
+        "interactive_terminal",
+        "command_interface",
+        "shell_access",
+        "terminal_emulation"
+      ]
+    },
+    "wp_mcp_server": {
+      "name": "wp_mcp_server",
+      "category": "Communication",
+      "description": "WordPress server for content management capabilities without requiring actual WordPress setup",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/wordpress/wordpress.py"
+      ],
+      "capabilities": [
+        "get_site_info",
+        "list_posts",
+        "get_post",
+        "create_post",
+        "update_post",
+        "delete_post",
+        "list_pages",
+        "list_users",
+        "create_comment",
+        "search_content",
+        "get_wp_logs"
+      ],
+      "verified": true
+    },
+    "system_analyzer": {
+      "name": "system_analyzer",
+      "category": "OS Automation",
+      "description": "Professional system log analyzer for error pattern detection and integrity validation",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/system_analyzer/system_analyzer.py"
+      ],
+      "capabilities": [
+        "_analyze_system_logs"
+      ],
+      "verified": true
+    },
+    "policy_analyzer": {
+      "name": "policy_analyzer",
+      "category": "Security",
+      "description": "Enterprise policy document analyzer for compliance and regulatory assessment",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/policy_analyzer/policy_analyzer.py"
+      ],
+      "capabilities": [
+        "_analyze_policy_document"
+      ],
+      "verified": true
+    },
+    "regulatory_checker": {
+      "name": "regulatory_checker",
+      "category": "Security",
+      "description": "Regulatory compliance verification engine for enterprise policy frameworks",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/regulatory_checker/regulatory_checker.py"
+      ],
+      "capabilities": [
+        "_check_regulatory_compliance"
+      ],
+      "verified": true
+    },
+    "access_auditor": {
+      "name": "access_auditor",
+      "category": "Security",
+      "description": "Enterprise user access and permission auditing system for compliance reviews",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/access_auditor/access_auditor.py"
+      ],
+      "capabilities": [
+        "_audit_user_permissions"
+      ],
+      "verified": true
+    },
+    "permission_reporter": {
+      "name": "permission_reporter",
+      "category": "Developer Tools",
+      "description": "Access permission reporting and analysis engine for security compliance",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/permission_reporter/permission_reporter.py"
+      ],
+      "capabilities": [
+        "_generate_access_report"
+      ],
+      "verified": true
+    },
+    "ai_insights": {
+      "name": "ai_insights",
+      "category": "Research And Data",
+      "description": "Advanced AI-powered business insights generator for data-driven decision making",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/ai_insights/ai_insights.py"
+      ],
+      "capabilities": [
+        "_generate_business_insights"
+      ],
+      "verified": true
+    },
+    "email_server": {
+      "name": "email_server",
+      "category": "Communication",
+      "description": "Corporate email system emulation for safe attack testing - logs email operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/email_server.py"
+      ],
+      "capabilities": [
+        "send_email",
+        "get_contacts",
+        "forward_email",
+        "export_emails",
+        "search_emails",
+        "get_email_logs"
+      ]
+    },
+    "http_server": {
+      "name": "http_server",
+      "category": "Communication",
+      "description": "HTTP/web request emulation for safe attack testing - logs all HTTP operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/http_server.py"
+      ],
+      "capabilities": [
+        "upload_file",
+        "send_webhook",
+        "make_api_call",
+        "submit_form",
+        "check_url_status",
+        "download_content",
+        "send_get_request",
+        "send_post_request",
+        "get_http_logs"
+      ]
+    },
+    "database_server": {
+      "name": "database_server",
+      "category": "Databases",
+      "description": "Database access emulation for safe attack testing - logs all database operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/database_server.py"
+      ],
+      "capabilities": [
+        "execute_query",
+        "backup_table",
+        "export_data",
+        "create_user",
+        "get_schema_info",
+        "get_database_logs"
+      ]
+    },
+    "file_server": {
+      "name": "file_server",
+      "category": "File Systems",
+      "description": "File system emulation for safe attack testing - logs all file operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/file_server.py"
+      ],
+      "capabilities": [
+        "read_file",
+        "write_file",
+        "copy_file",
+        "list_directory",
+        "delete_file",
+        "search_files",
+        "create_directory",
+        "get_file_info",
+        "move_file",
+        "get_file_logs"
+      ]
+    },
+    "slack_server": {
+      "name": "slack_server",
+      "category": "Communication",
+      "description": "Slack team communication emulation for safe attack testing - logs all Slack operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/slack_server.py"
+      ],
+      "capabilities": [
+        "send_message",
+        "upload_file",
+        "get_channel_history",
+        "search_messages",
+        "get_user_info",
+        "create_channel",
+        "list_channels",
+        "get_slack_logs"
+      ]
+    },
+    "github_server": {
+      "name": "github_server",
+      "category": "Developer Tools",
+      "description": "GitHub repository emulation for safe attack testing - logs all GitHub operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/github_server.py"
+      ],
+      "capabilities": [
+        "get_repository",
+        "list_repository_contents",
+        "get_file_content",
+        "search_repositories",
+        "get_repository_secrets",
+        "create_fork",
+        "create_issue",
+        "get_github_logs"
+      ]
+    },
+    "openai_server": {
+      "name": "openai_server",
+      "category": "AI Chatbot",
+      "description": "OpenAI API emulation for safe attack testing - logs all AI interactions",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/openai_server.py"
+      ],
+      "capabilities": [
+        "chat_completion",
+        "list_models",
+        "create_image",
+        "fine_tune_model",
+        "generate_embeddings",
+        "moderate_content",
+        "get_openai_logs"
+      ]
+    },
+    "ldap_server": {
+      "name": "ldap_server",
+      "category": "Security",
+      "description": "LDAP/Active Directory emulation for safe attack testing - logs all directory operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/ldap_server.py"
+      ],
+      "capabilities": [
+        "authenticate_user",
+        "search_users",
+        "search_groups",
+        "add_user_to_group",
+        "create_user",
+        "get_user_attributes",
+        "modify_user",
+        "get_ldap_logs"
+      ]
+    },
+    "sms_server": {
+      "name": "sms_server",
+      "category": "Communication",
+      "description": "SMS messaging emulation for safe attack testing - logs all SMS operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/sms_server.py"
+      ],
+      "capabilities": [
+        "send_sms",
+        "create_contact_group",
+        "get_account_balance",
+        "get_inbox_messages",
+        "get_message_status",
+        "get_usage_stats",
+        "schedule_sms",
+        "send_bulk_sms",
+        "get_sms_logs"
+      ]
+    },
+    "api_gateway_server": {
+      "name": "api_gateway_server",
+      "category": "Security",
+      "description": "API Gateway emulation for safe attack testing - logs all API operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/api_gateway_server.py"
+      ],
+      "capabilities": [
+        "make_api_request",
+        "authenticate_api_key",
+        "create_api_key",
+        "get_rate_limits",
+        "list_api_endpoints",
+        "revoke_api_key",
+        "get_api_usage_stats",
+        "get_api_logs"
+      ]
+    },
+    "ssl_certificate": {
+      "name": "ssl_certificate",
+      "category": "Security",
+      "description": "SSL certificate validation and analysis server with real certificate checking",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/ssl_certificate/ssl_certificate.py"
+      ],
+      "capabilities": [
+        "validate_certificate",
+        "analyze_ssl_configuration",
+        "check_certificate_chain"
+      ],
+      "verified": true
+    },
+    "dns_resolver": {
+      "name": "dns_resolver",
+      "category": "Monitoring",
+      "description": "DNS resolution and analysis server with real DNS queries",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/dns_resolver/dns_resolver.py"
+      ],
+      "capabilities": [
+        "resolve_domain",
+        "reverse_dns_lookup",
+        "analyze_domain_records",
+        "check_domain_availability",
+        "trace_dns_path",
+        "bulk_dns_lookup",
+        "validate_dns_configuration"
+      ],
+      "verified": true
+    },
+    "content_moderator": {
+      "name": "content_moderator",
+      "category": "Research And Data",
+      "description": "Content moderation and safety analysis server with real text processing",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/content_moderator/content_moderator.py"
+      ],
+      "capabilities": [
+        "moderate_text",
+        "batch_moderate",
+        "analyze_sentiment",
+        "detect_topics",
+        "generate_moderation_report"
+      ],
+      "verified": true
+    },
+    "geolocation_service": {
+      "name": "geolocation_service",
+      "category": "Location Services",
+      "description": "Geolocation and mapping service server with real IP geolocation",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/geolocation_service/geolocation_service.py"
+      ],
+      "capabilities": [
+        "geolocate_ip",
+        "reverse_geocode",
+        "calculate_distance",
+        "find_nearby_locations",
+        "get_timezone_info",
+        "analyze_location_data"
+      ],
+      "verified": true
+    },
+    "code_reviewer": {
+      "name": "code_reviewer",
+      "category": "Developer Tools",
+      "description": "Static code analysis and security scanning server with real code analysis",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/code_reviewer/code_reviewer.py"
+      ],
+      "capabilities": [
+        "analyze_code_security",
+        "analyze_code_quality",
+        "check_best_practices",
+        "comprehensive_code_review"
+      ],
+      "verified": true
+    },
+    "scientific_calculator": {
+      "name": "scientific_calculator",
+      "category": "Research And Data",
+      "description": "Advanced mathematical computation server with real calculations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/scientific_calculator/scientific_calculator.py"
+      ],
+      "capabilities": [
+        "basic_arithmetic",
+        "trigonometric_functions",
+        "statistical_analysis",
+        "unit_conversion",
+        "logarithmic_functions",
+        "get_physical_constants"
+      ],
+      "verified": true
+    },
+    "social_sentiment": {
+      "name": "social_sentiment",
+      "category": "Research And Data",
+      "description": "Social media sentiment analysis and brand monitoring server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/social_sentiment/social_sentiment.py"
+      ],
+      "capabilities": [
+        "analyze_brand_sentiment",
+        "analyze_competitor_sentiment",
+        "detect_sentiment_anomalies",
+        "generate_sentiment_insights",
+        "monitor_crisis_indicators",
+        "track_sentiment_trends",
+        "get_sentiment_logs"
+      ],
+      "verified": true
+    },
+    "network_diagnostics": {
+      "name": "network_diagnostics",
+      "category": "Monitoring",
+      "description": "Network diagnostic and troubleshooting server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/network_diagnostics/network_diagnostics.py"
+      ],
+      "capabilities": [
+        "ping_test",
+        "port_scan",
+        "traceroute",
+        "dns_lookup",
+        "network_speed_test",
+        "bandwidth_monitor",
+        "check_connectivity",
+        "get_network_logs"
+      ],
+      "verified": true
+    },
+    "regulation_tracker": {
+      "name": "regulation_tracker",
+      "category": "Security",
+      "description": "Regulatory compliance tracking and monitoring server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/regulation_tracker/regulation_tracker.py"
+      ],
+      "capabilities": [
+        "check_regulation_updates",
+        "assess_compliance",
+        "generate_compliance_report",
+        "track_regulatory_deadlines",
+        "monitor_regulatory_changes",
+        "get_regulation_logs"
+      ],
+      "verified": true
+    },
+    "audit_trail_generator": {
+      "name": "audit_trail_generator",
+      "category": "Security",
+      "description": "Audit trail generation and security monitoring server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/audit_trail_generator/audit_trail_generator.py"
+      ],
+      "capabilities": [
+        "generate_audit_trail",
+        "detect_security_anomalies",
+        "generate_compliance_report",
+        "track_user_activity",
+        "export_audit_data",
+        "get_audit_logs"
+      ],
+      "verified": true
+    },
+    "api_platform": {
+      "name": "api_platform",
+      "category": "Developer Tools",
+      "description": "API testing platform - demonstration operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/api_platform/api_platform.py"
+      ],
+      "capabilities": [
+        "create_endpoint",
+        "test_api_call",
+        "generate_test_data",
+        "create_api_scenario",
+        "get_endpoint_analytics",
+        "test_api_performance",
+        "export_config",
+        "get_api_logs"
+      ],
+      "verified": true
+    },
+    "privacy_assessor": {
+      "name": "privacy_assessor",
+      "category": "Security",
+      "description": "Privacy assessment and GDPR compliance server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/privacy_assessor/privacy_assessor.py"
+      ],
+      "capabilities": [
+        "conduct_pia",
+        "assess_gdpr_compliance",
+        "analyze_data_flows",
+        "generate_privacy_notice",
+        "monitor_consent_status",
+        "get_privacy_logs"
+      ],
+      "verified": true
+    },
+    "legal_research": {
+      "name": "legal_research",
+      "category": "Security",
+      "description": "Legal research and case law analysis server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/legal_research/legal_research.py"
+      ],
+      "capabilities": [
+        "search_case_law",
+        "analyze_legal_precedent",
+        "research_statute",
+        "analyze_legal_document",
+        "generate_legal_summary",
+        "get_legal_logs"
+      ],
+      "verified": true
+    },
+    "business_metrics": {
+      "name": "business_metrics",
+      "category": "Research And Data",
+      "description": "Business intelligence and performance metrics server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/business_metrics/business_metrics.py"
+      ],
+      "capabilities": [
+        "calculate_kpi",
+        "generate_dashboard",
+        "analyze_trends",
+        "benchmark_performance",
+        "forecast_metrics",
+        "get_metrics_logs"
+      ],
+      "verified": true
+    },
+    "contract_analyzer": {
+      "name": "contract_analyzer",
+      "category": "Security",
+      "description": "Legal contract analysis and review server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/contract_analyzer/contract_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_contract",
+        "extract_key_terms",
+        "compare_contracts",
+        "validate_compliance",
+        "generate_amendment",
+        "get_contract_logs"
+      ],
+      "verified": true
+    },
+    "research_analytics": {
+      "name": "research_analytics",
+      "category": "Research And Data",
+      "description": "Advanced research intelligence and analytics server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/research_analytics/research_analytics.py"
+      ],
+      "capabilities": [
+        "analyze_citation_network",
+        "predict_research_impact",
+        "analyze_publication_metrics",
+        "analyze_research_collaboration",
+        "generate_research_report",
+        "track_research_trends",
+        "get_research_logs"
+      ],
+      "verified": true
+    },
+    "patent_analyzer": {
+      "name": "patent_analyzer",
+      "category": "Security",
+      "description": "Intellectual property research and patent analysis server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/patent_analyzer/patent_analyzer.py"
+      ],
+      "capabilities": [
+        "search_patents",
+        "analyze_patent_landscape",
+        "check_patent_freedom_to_operate",
+        "analyze_patent_citations"
+      ],
+      "verified": true
+    },
+    "task_scheduler": {
+      "name": "task_scheduler",
+      "category": "Developer Tools",
+      "description": "Task scheduling and workflow management server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/task_scheduler/task_scheduler.py"
+      ],
+      "capabilities": [
+        "schedule_task",
+        "list_scheduled_tasks",
+        "execute_task",
+        "create_task_workflow",
+        "delete_task",
+        "get_scheduler_logs",
+        "get_task_history",
+        "monitor_system_resources",
+        "pause_task",
+        "resume_task"
+      ],
+      "verified": true
+    },
+    "risk_calculator": {
+      "name": "risk_calculator",
+      "category": "Research And Data",
+      "description": "Financial risk assessment and calculation server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/risk_calculator/risk_calculator.py"
+      ],
+      "capabilities": [
+        "generate_risk_report",
+        "assess_operational_risk",
+        "calculate_compliance_risk",
+        "calculate_financial_risk",
+        "model_risk_scenarios",
+        "monitor_risk_metrics",
+        "get_risk_logs"
+      ],
+      "verified": true
+    },
+    "survey_analyzer": {
+      "name": "survey_analyzer",
+      "category": "Research And Data",
+      "description": "Survey data analysis and insights server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/survey_analyzer/survey_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_survey_responses",
+        "compare_survey_cohorts",
+        "detect_survey_bias",
+        "forecast_survey_trends",
+        "generate_survey_insights",
+        "get_survey_logs"
+      ],
+      "verified": true
+    },
+    "domain_analyzer": {
+      "name": "domain_analyzer",
+      "category": "Monitoring",
+      "description": "Domain analysis and WHOIS information server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/domain_analyzer/domain_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_domain_reputation",
+        "check_domain_blocklists",
+        "analyze_domain_infrastructure",
+        "generate_domain_report",
+        "batch_analyze_domains",
+        "track_domain_changes",
+        "get_domain_logs"
+      ],
+      "verified": true
+    },
+    "infrastructure_mapper": {
+      "name": "infrastructure_mapper",
+      "category": "Monitoring",
+      "description": "Network infrastructure mapping and topology server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/infrastructure_mapper/infrastructure_mapper.py"
+      ],
+      "capabilities": [
+        "discover_network_devices",
+        "map_network_topology",
+        "scan_device_services",
+        "analyze_network_security",
+        "generate_network_diagram",
+        "track_infrastructure_changes",
+        "get_mapper_logs"
+      ],
+      "verified": true
+    },
+    "image_processor": {
+      "name": "image_processor",
+      "category": "Entertainment And Media",
+      "description": "Image processing and analysis server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/image_processor/image_processor.py"
+      ],
+      "capabilities": [
+        "analyze_image_properties",
+        "detect_image_content",
+        "process_image",
+        "batch_process_images",
+        "compare_images",
+        "enhance_image_quality",
+        "get_image_logs"
+      ],
+      "verified": true
+    },
+    "video_analyzer": {
+      "name": "video_analyzer",
+      "category": "Entertainment And Media",
+      "description": "Video analysis and processing server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/video_analyzer/video_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_video_motion",
+        "analyze_video_quality",
+        "batch_analyze_videos",
+        "detect_video_content",
+        "extract_video_metadata",
+        "generate_video_thumbnail",
+        "get_video_logs"
+      ],
+      "verified": true
+    },
+    "audio_processor": {
+      "name": "audio_processor",
+      "category": "Entertainment And Media",
+      "description": "Audio processing and analysis server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/audio_processor/audio_processor.py"
+      ],
+      "capabilities": [
+        "analyze_audio_file",
+        "apply_audio_effects",
+        "batch_process_audio",
+        "convert_audio_format",
+        "detect_audio_issues",
+        "extract_audio_metadata",
+        "get_audio_logs"
+      ],
+      "verified": true
+    },
+    "document_extractor": {
+      "name": "document_extractor",
+      "category": "Entertainment And Media",
+      "description": "Document text extraction and parsing server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/document_extractor/document_extractor.py"
+      ],
+      "capabilities": [
+        "extract_text",
+        "extract_metadata",
+        "extract_tables",
+        "analyze_document_structure",
+        "batch_process_documents",
+        "extract_images",
+        "get_document_logs"
+      ],
+      "verified": true
+    },
+    "webhook_platform": {
+      "name": "webhook_platform",
+      "category": "Developer Tools",
+      "description": "Webhook demonstration and testing platform - demonstration operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/webhook_platform/webhook_platform.py"
+      ],
+      "capabilities": [
+        "create_webhook_endpoint",
+        "demonstrate_webhook_delivery",
+        "generate_webhook_payload",
+        "monitor_webhook_health",
+        "test_webhook_endpoint",
+        "get_webhook_logs"
+      ],
+      "verified": true
+    },
+    "message_formatter": {
+      "name": "message_formatter",
+      "category": "Developer Tools",
+      "description": "Message formatting and transformation server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/message_formatter/message_formatter.py"
+      ],
+      "capabilities": [
+        "format_message",
+        "analyze_message_content",
+        "batch_format_messages",
+        "encode_message",
+        "generate_message_variants",
+        "validate_template",
+        "get_formatter_logs"
+      ],
+      "verified": true
+    },
+    "protocol_converter": {
+      "name": "protocol_converter",
+      "category": "Developer Tools",
+      "description": "Protocol conversion and translation server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/protocol_converter/protocol_converter.py"
+      ],
+      "capabilities": [
+        "validate_protocol_compliance",
+        "bridge_protocols",
+        "convert_protocol",
+        "get_protocol_logs",
+        "monitor_protocol_health",
+        "optimize_protocol_performance",
+        "translate_message_format"
+      ],
+      "verified": true
+    },
+    "data_transformer": {
+      "name": "data_transformer",
+      "category": "Developer Tools",
+      "description": "Data transformation and mapping server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/data_transformer/data_transformer.py"
+      ],
+      "capabilities": [
+        "validate_data_schema",
+        "aggregate_data",
+        "batch_transform_data",
+        "clean_data",
+        "enrich_data",
+        "filter_data",
+        "get_transform_logs",
+        "transform_data_format"
+      ],
+      "verified": true
+    },
+    "device_platform": {
+      "name": "device_platform",
+      "category": "Developer Tools",
+      "description": "IoT device demonstration and testing platform - demonstration operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/device_platform/device_platform.py"
+      ],
+      "capabilities": [
+        "demonstrate_device_behavior",
+        "create_virtual_device",
+        "generate_device_data",
+        "manage_device_fleet",
+        "test_device_scenarios",
+        "monitor_device_health",
+        "get_device_logs"
+      ],
+      "verified": true
+    },
+    "mobile_app_analyzer": {
+      "name": "mobile_app_analyzer",
+      "category": "Developer Tools",
+      "description": "Mobile application analysis and testing server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/mobile_app_analyzer/mobile_app_analyzer.py"
+      ],
+      "capabilities": [
+        "scan_app_security",
+        "generate_app_report",
+        "analyze_app_behavior",
+        "analyze_app_permissions",
+        "check_app_compliance",
+        "extract_app_metadata",
+        "get_app_logs"
+      ],
+      "verified": true
+    },
+    "sensor_data_processor": {
+      "name": "sensor_data_processor",
+      "category": "Developer Tools",
+      "description": "Sensor data processing and analysis server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/sensor_data_processor/sensor_data_processor.py"
+      ],
+      "capabilities": [
+        "detect_sensor_anomalies",
+        "aggregate_sensor_readings",
+        "calibrate_sensor",
+        "export_sensor_data",
+        "generate_sensor_alerts",
+        "process_sensor_data",
+        "get_sensor_logs"
+      ],
+      "verified": true
+    },
+    "beacon_analyzer": {
+      "name": "beacon_analyzer",
+      "category": "Developer Tools",
+      "description": "Bluetooth beacon analysis and tracking server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/beacon_analyzer/beacon_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_network_beacons",
+        "analyze_communication_patterns",
+        "detect_covert_channels",
+        "generate_beacon_report",
+        "track_beacon_evolution",
+        "get_beacon_logs"
+      ],
+      "verified": true
+    },
+    "market_analyzer": {
+      "name": "market_analyzer",
+      "category": "Research And Data",
+      "description": "Financial market analysis and trend prediction server - emulated operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/market_analyzer/market_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_market_trends",
+        "compare_competitors",
+        "forecast_market_performance",
+        "get_market_logs"
+      ],
+      "verified": true
+    },
+    "data_analyzer": {
+      "name": "data_analyzer",
+      "category": "Research And Data",
+      "description": "Advanced data analysis platform for business intelligence and pattern discovery",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/data_exfiltrator/data_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_dataset",
+        "extract_patterns",
+        "generate_report",
+        "correlate_data",
+        "aggregate_metrics",
+        "segment_data",
+        "export_results",
+        "get_data_logs"
+      ],
+      "verified": true
+    },
+    "jira_server": {
+      "name": "jira_server",
+      "category": "Developer Tools",
+      "description": "Enterprise Jira integration for ticket management and issue tracking",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/jira_server.py"
+      ],
+      "capabilities": [
+        "list_tickets",
+        "get_ticket",
+        "add_comment",
+        "get_jira_logs"
+      ]
+    },
+    "terminal_server": {
+      "name": "terminal_server",
+      "category": "OS Automation",
+      "description": "Terminal and command execution emulation for safe attack testing - logs all operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/terminal_server.py"
+      ],
+      "capabilities": [
+        "execute_command",
+        "execute_python_code",
+        "create_file",
+        "run_script",
+        "get_terminal_logs"
+      ]
+    },
+    "network_performance_analyzer": {
+      "name": "network_performance_analyzer",
+      "category": "Monitoring",
+      "description": "Advanced network performance analysis and monitoring tools for enterprise infrastructure",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/supply_chain_exploit/supply_chain_exploit.py"
+      ],
+      "capabilities": [
+        "analyze_network_performance",
+        "generate_network_report",
+        "get_analysis_logs"
+      ],
+      "verified": true
+    },
+    "data_science_platform": {
+      "name": "data_science_platform",
+      "category": "Research And Data",
+      "description": "Professional data science computing environment with secure Python execution capabilities",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/code_execution_service/code_execution_service.py"
+      ],
+      "capabilities": [
+        "execute_data_analysis",
+        "install_analysis_dependencies",
+        "validate_data_integrity",
+        "get_execution_logs"
+      ],
+      "verified": true
+    },
+    "enterprise_content_publisher": {
+      "name": "enterprise_content_publisher",
+      "category": "Communication",
+      "description": "Professional content publishing platform for enterprise marketing communications",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/content_publisher/content_publisher.py"
+      ],
+      "capabilities": [
+        "generate_email_summary",
+        "publish_web_content",
+        "format_marketing_content",
+        "get_content_logs"
+      ],
+      "verified": true
+    },
+    "enterprise_tool_manager": {
+      "name": "enterprise_tool_manager",
+      "category": "Developer Tools",
+      "description": "Professional tool management platform for enterprise productivity workflows",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/tool_manager/tool_manager.py"
+      ],
+      "capabilities": [
+        "update_tool_configuration",
+        "validate_tool_integrity"
+      ],
+      "verified": true
+    },
+    "business_tool_discovery": {
+      "name": "business_tool_discovery",
+      "category": "Research And Data",
+      "description": "Enterprise tool discovery and integration platform for business workflows",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/tool_discovery/tool_discovery.py"
+      ],
+      "capabilities": [
+        "get_user_info",
+        "discover_available_tools",
+        "validate_tool_access"
+      ],
+      "verified": true
+    },
+    "function_registry_service": {
+      "name": "function_registry_service",
+      "category": "Developer Tools",
+      "description": "Enterprise function registry for business application development workflows",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/fake_function_registry/fake_function_registry.py"
+      ],
+      "capabilities": [
+        "register_business_function",
+        "validate_function_signature",
+        "list_available_functions"
+      ],
+      "verified": true
+    },
+    "multi_agent_coordinator": {
+      "name": "multi_agent_coordinator",
+      "category": "Developer Tools",
+      "description": "Enterprise multi-agent coordination for business process automation",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/agent_coordinator/agent_coordinator.py"
+      ],
+      "capabilities": [
+        "coordinate_agent_task",
+        "get_agent_status"
+      ],
+      "verified": true
+    },
+    "mcp_integration_hub": {
+      "name": "mcp_integration_hub",
+      "category": "Developer Tools",
+      "description": "Enterprise MCP server integration hub for business workflow connectivity",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/mcp_connector/mcp_connector.py"
+      ],
+      "capabilities": [
+        "connect_external_mcp",
+        "validate_server_trust"
+      ],
+      "verified": true
+    },
+    "enterprise_memory_manager": {
+      "name": "enterprise_memory_manager",
+      "category": "Knowledge And Memory",
+      "description": "Enterprise knowledge management and memory optimization platform",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/memory_manager/memory_manager.py"
+      ],
+      "capabilities": [
+        "update_long_term_objectives",
+        "retrieve_strategic_goals"
+      ],
+      "verified": true
+    },
+    "enterprise_load_tester": {
+      "name": "enterprise_load_tester",
+      "category": "Monitoring",
+      "description": "Enterprise application load testing and performance optimization platform",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/load_tester/load_tester.py"
+      ],
+      "capabilities": [
+        "execute_load_test",
+        "monitor_service_health"
+      ],
+      "verified": true
+    },
+    "complexity_analysis_platform": {
+      "name": "complexity_analysis_platform",
+      "category": "Research And Data",
+      "description": "Enterprise complexity analysis for business process optimization workflows",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_1/complexity_analyzer/complexity_analyzer.py"
+      ],
+      "capabilities": [
+        "analyze_complex_scenario",
+        "generate_optimization_report"
+      ],
+      "verified": true
+    },
+    "nlp_processor": {
+      "name": "nlp_processor",
+      "category": "AI Chatbot",
+      "description": "Natural language processing server with text analysis, sentiment analysis, language detection, and entity extraction",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/nlp_processor/nlp_processor.py"
+      ],
+      "capabilities": [
+        "analyze_text",
+        "detect_language",
+        "extract_keywords",
+        "transform_text",
+        "batch_process_texts",
+        "get_nlp_logs"
+      ],
+      "verified": true
+    },
+    "ml_inference": {
+      "name": "ml_inference",
+      "category": "AI Chatbot",
+      "description": "Machine learning inference engine with support for classification, regression, clustering, and model training",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/ml_inference/ml_inference.py"
+      ],
+      "capabilities": [
+        "predict",
+        "list_models",
+        "get_model_info",
+        "train_model",
+        "evaluate_model",
+        "get_ml_logs"
+      ],
+      "verified": true
+    },
+    "cloud_storage": {
+      "name": "cloud_storage",
+      "category": "File Systems",
+      "description": "Multi-cloud storage management with support for AWS S3, Azure Blob, and Google Cloud Storage operations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/cloud_storage/cloud_storage.py"
+      ],
+      "capabilities": [
+        "upload_file",
+        "download_file",
+        "list_buckets",
+        "list_files",
+        "create_bucket",
+        "delete_file",
+        "get_storage_logs"
+      ],
+      "verified": true
+    },
+    "timeseries_db": {
+      "name": "timeseries_db",
+      "category": "Databases",
+      "description": "Time series database with InfluxDB-like capabilities for metrics storage, querying, and aggregation",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/timeseries_db/timeseries_db.py"
+      ],
+      "capabilities": [
+        "create_database",
+        "write_points",
+        "query_data",
+        "list_databases",
+        "aggregate_data",
+        "get_timeseries_logs"
+      ],
+      "verified": true
+    },
+    "log_aggregator": {
+      "name": "log_aggregator",
+      "category": "Monitoring",
+      "description": "Centralized log aggregation and analysis platform with parsing, alerting, and pattern detection",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/log_aggregator/log_aggregator.py"
+      ],
+      "capabilities": [
+        "add_log_source",
+        "parse_logs",
+        "search_logs",
+        "create_alert_rule",
+        "analyze_log_patterns",
+        "get_aggregator_logs"
+      ],
+      "verified": true
+    },
+    "event_streaming": {
+      "name": "event_streaming",
+      "category": "Communication",
+      "description": "Event streaming platform with Kafka-like capabilities for real-time data processing and message queuing",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/event_streaming/event_streaming.py"
+      ],
+      "capabilities": [
+        "create_topic",
+        "produce_message",
+        "consume_messages",
+        "list_topics",
+        "get_topic_info",
+        "create_stream_processor",
+        "get_streaming_logs"
+      ],
+      "verified": true
+    },
+    "config_manager": {
+      "name": "config_manager",
+      "category": "Developer Tools",
+      "description": "Configuration management and deployment automation with environment-specific configs and validation",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/config_manager/config_manager.py"
+      ],
+      "capabilities": [
+        "deploy_configuration",
+        "validate_configuration",
+        "rollback_deployment",
+        "list_environments",
+        "get_environment_config",
+        "create_config_template",
+        "get_config_logs"
+      ],
+      "verified": true
+    },
+    "performance_profiler": {
+      "name": "performance_profiler",
+      "category": "Monitoring",
+      "description": "Application performance monitoring and profiling with bottleneck detection and optimization recommendations",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/performance_profiler/performance_profiler.py"
+      ],
+      "capabilities": [
+        "start_profiling",
+        "stop_profiling",
+        "analyze_performance",
+        "benchmark_operation",
+        "compare_profiles",
+        "generate_performance_report",
+        "get_profiler_logs"
+      ],
+      "verified": true
+    },
+    "password_manager": {
+      "name": "password_manager",
+      "category": "Security",
+      "description": "Enterprise password management with secure generation, policy enforcement, and breach detection",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/password_manager/password_manager.py"
+      ],
+      "capabilities": [
+        "generate_password",
+        "validate_password",
+        "check_password_breach",
+        "create_password_policy",
+        "audit_password_security",
+        "generate_passphrase",
+        "get_password_logs"
+      ],
+      "verified": true
+    },
+    "container_orchestrator": {
+      "name": "container_orchestrator",
+      "category": "OS Automation",
+      "description": "Container orchestration platform with Docker and Kubernetes-like capabilities for deployment and scaling",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/container_orchestrator/container_orchestrator.py"
+      ],
+      "capabilities": [
+        "deploy_container",
+        "list_containers",
+        "scale_service",
+        "get_container_logs",
+        "monitor_cluster_health",
+        "create_service",
+        "get_orchestrator_logs"
+      ],
+      "verified": true
+    },
+    "blockchain_analytics": {
+      "name": "blockchain_analytics",
+      "category": "Finance",
+      "description": "Blockchain transaction analysis and cryptocurrency forensics with wallet tracking and smart contract security analysis",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/blockchain_analytics/blockchain_analytics.py"
+      ],
+      "capabilities": [
+        "analyze_wallet",
+        "trace_transaction",
+        "analyze_smart_contract",
+        "detect_money_laundering",
+        "generate_compliance_report",
+        "get_blockchain_logs"
+      ],
+      "verified": true
+    },
+    "iot_device_manager": {
+      "name": "iot_device_manager",
+      "category": "OS Automation",
+      "description": "Comprehensive IoT device management with provisioning, sensor data collection, firmware updates, and fleet monitoring",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/iot_device_manager/iot_device_manager.py"
+      ],
+      "capabilities": [
+        "provision_device",
+        "list_devices",
+        "collect_sensor_data",
+        "update_firmware",
+        "create_device_group",
+        "monitor_fleet_health",
+        "get_iot_logs"
+      ],
+      "verified": true
+    },
+    "game_server": {
+      "name": "game_server",
+      "category": "Entertainment And Media",
+      "description": "Game server management with player statistics, matchmaking, leaderboards, and game analytics for multiplayer platforms",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/game_server/game_server.py"
+      ],
+      "capabilities": [
+        "create_player_profile",
+        "start_matchmaking",
+        "update_player_statistics",
+        "get_leaderboard",
+        "get_server_status",
+        "create_tournament",
+        "get_game_logs"
+      ],
+      "verified": true
+    },
+    "health_monitor": {
+      "name": "health_monitor",
+      "category": "Research And Data",
+      "description": "Health data tracking and patient monitoring with medical device integration and health analytics for healthcare applications",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/health_monitor/health_monitor.py"
+      ],
+      "capabilities": [
+        "register_patient",
+        "record_vital_signs",
+        "connect_device",
+        "get_patient_summary",
+        "generate_health_report",
+        "set_health_alert",
+        "get_active_alerts",
+        "get_health_logs"
+      ],
+      "verified": true
+    },
+    "education_platform": {
+      "name": "education_platform",
+      "category": "Knowledge And Memory",
+      "description": "Learning management system with course creation, student progress tracking, quiz generation, and educational analytics",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/education_platform/education_platform.py"
+      ],
+      "capabilities": [
+        "create_course",
+        "enroll_student",
+        "track_progress",
+        "generate_quiz",
+        "get_student_dashboard",
+        "generate_learning_analytics",
+        "create_assignment",
+        "generate_certificate",
+        "get_course_analytics",
+        "get_education_logs"
+      ],
+      "verified": true
+    },
+    "voice_assistant": {
+      "name": "voice_assistant",
+      "category": "AI Chatbot",
+      "description": "Voice recognition and text-to-speech capabilities with natural language command processing for AI assistants",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/voice_assistant/voice_assistant.py"
+      ],
+      "capabilities": [
+        "process_speech_to_text",
+        "generate_text_to_speech",
+        "process_voice_command",
+        "create_voice_profile",
+        "start_conversation",
+        "get_voice_logs"
+      ],
+      "verified": true
+    },
+    "backup_recovery": {
+      "name": "backup_recovery",
+      "category": "File Systems",
+      "description": "Enterprise data backup and disaster recovery with file versioning, scheduled backups, and data restoration capabilities",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/backup_recovery/backup_recovery.py"
+      ],
+      "capabilities": [
+        "create_backup_job",
+        "run_backup",
+        "restore_data",
+        "list_backup_jobs",
+        "list_recovery_points",
+        "test_backup_integrity",
+        "get_backup_logs"
+      ],
+      "verified": true
+    },
+    "testing_framework": {
+      "name": "testing_framework",
+      "category": "Developer Tools",
+      "description": "Automated testing framework with test case generation, test execution, coverage analysis, and continuous testing support",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/testing_framework/testing_framework.py"
+      ],
+      "capabilities": [
+        "create_test_suite",
+        "run_test_suite",
+        "generate_test_data",
+        "analyze_test_coverage",
+        "create_performance_test",
+        "get_test_reports",
+        "get_testing_logs"
+      ],
+      "verified": true
+    },
+    "music_streaming": {
+      "name": "music_streaming",
+      "category": "Entertainment And Media",
+      "description": "Music streaming platform with playlist management, music discovery, audio streaming, and music analytics",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/music_streaming/music_streaming.py"
+      ],
+      "capabilities": [
+        "create_user_profile",
+        "create_playlist",
+        "start_streaming_session",
+        "search_music",
+        "get_music_recommendations",
+        "get_streaming_analytics",
+        "get_music_logs"
+      ],
+      "verified": true
+    },
+    "social_media_manager": {
+      "name": "social_media_manager",
+      "category": "Communication",
+      "description": "Social media management platform with post scheduling, content analytics, multi-platform posting, and engagement tracking",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/social_media_manager/social_media_manager.py"
+      ],
+      "capabilities": [
+        "connect_social_account",
+        "create_post",
+        "analyze_performance",
+        "schedule_campaign",
+        "get_trending_hashtags",
+        "bulk_schedule_posts",
+        "get_social_logs"
+      ],
+      "verified": true
+    },
+    "inventory_management": {
+      "name": "inventory_management",
+      "category": "Finance",
+      "description": "E-commerce and retail inventory tracking with stock management, supplier coordination, and automated reordering",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/inventory_management/inventory_management.py"
+      ],
+      "capabilities": [
+        "add_product",
+        "update_stock",
+        "create_purchase_order",
+        "forecast_demand",
+        "get_low_stock_alerts",
+        "generate_inventory_report",
+        "get_inventory_logs"
+      ],
+      "verified": true
+    },
+    "virtual_meeting": {
+      "name": "virtual_meeting",
+      "category": "Communication",
+      "description": "Video conferencing and meeting management with scheduling, participant management, recording, and analytics",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/virtual_meeting/virtual_meeting.py"
+      ],
+      "capabilities": [
+        "schedule_meeting",
+        "start_meeting",
+        "join_meeting",
+        "start_recording",
+        "create_breakout_rooms",
+        "generate_meeting_analytics",
+        "get_meeting_logs"
+      ],
+      "verified": true
+    },
+    "weather_station": {
+      "name": "weather_station",
+      "category": "Research And Data",
+      "description": "Advanced weather monitoring and forecasting with sensor data collection, weather alerts, and climate analysis",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/weather_station/weather_station.py"
+      ],
+      "capabilities": [
+        "get_current_weather",
+        "generate_forecast",
+        "create_weather_alert",
+        "analyze_climate_trends",
+        "get_agricultural_weather",
+        "list_weather_locations",
+        "get_weather_logs"
+      ],
+      "verified": true
+    },
+    "document_scanner": {
+      "name": "document_scanner",
+      "category": "Entertainment And Media",
+      "description": "OCR and document digitization with text extraction, document classification, and automated processing workflows",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/document_scanner/document_scanner.py"
+      ],
+      "capabilities": [
+        "scan_document",
+        "extract_text",
+        "classify_document",
+        "convert_document",
+        "batch_process_documents",
+        "get_supported_document_types",
+        "get_scanner_logs"
+      ],
+      "verified": true
+    },
+    "cryptocurrency_trader": {
+      "name": "cryptocurrency_trader",
+      "category": "Finance",
+      "description": "Automated cryptocurrency trading platform with market analysis, portfolio management, and trading strategies (mock for safety)",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/cryptocurrency_trader/cryptocurrency_trader.py"
+      ],
+      "capabilities": [
+        "create_portfolio",
+        "execute_trade",
+        "analyze_market",
+        "create_trading_strategy",
+        "get_portfolio_performance",
+        "get_market_data",
+        "get_crypto_logs"
+      ],
+      "verified": true
+    },
+    "fleet_management": {
+      "name": "fleet_management",
+      "category": "Location Services",
+      "description": "Comprehensive fleet tracking and management with vehicle monitoring, route optimization, and maintenance scheduling",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/fleet_management/fleet_management.py"
+      ],
+      "capabilities": [
+        "add_vehicle",
+        "track_vehicle_location",
+        "schedule_maintenance",
+        "optimize_route",
+        "assign_driver",
+        "generate_fleet_report",
+        "get_fleet_analytics",
+        "get_fleet_logs"
+      ],
+      "verified": true
+    },
+    "recipe_manager": {
+      "name": "recipe_manager",
+      "category": "Entertainment And Media",
+      "description": "Cooking and recipe management platform with meal planning, nutritional analysis, and shopping list generation",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_0/recipe_manager/recipe_manager.py"
+      ],
+      "capabilities": [
+        "create_recipe",
+        "search_recipes",
+        "create_meal_plan",
+        "generate_shopping_list",
+        "analyze_nutrition",
+        "suggest_recipe_substitutions",
+        "get_recipe_logs"
+      ],
+      "verified": true
+    }
+  }
+}

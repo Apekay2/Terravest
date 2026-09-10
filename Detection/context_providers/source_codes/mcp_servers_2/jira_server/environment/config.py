@@ -1,0 +1,6 @@
+# Application Configuration
+
+# API Keys
+API_KEY = "sk-1234567890abcdefghijklmnopqrstuvwxyz"
+JWT_SECRET = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ"
+STRIPE_API_KEY = "sk_live_1234567890abcdefghijklmnopqrstuvwxyz"

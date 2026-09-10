@@ -1,0 +1,326 @@
+{
+  "registry_version": "2.0",
+  "description": "Context providers and system emulation servers registry for EAS threat intelligence and attack exploration",
+  "last_updated": "2025-08-20",
+  "total_servers": 15,
+  "servers": {
+    "threat_intelligence_server": {
+      "name": "threat_intelligence_server",
+      "category": "threat_intelligence",
+      "description": "ADR Threat Intelligence Context Provider for reasoning-based analysis",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/threat_intelligence_server.py"
+      ],
+      "capabilities": [
+        "get_threat_framework",
+        "get_detection_principles",
+        "get_tactic_info",
+        "search_techniques",
+        "get_technique_details",
+        "analyze_tool_behavior",
+        "assess_scope_violations",
+        "evaluate_information_fidelity",
+        "analyze_data_collection_scope"
+      ]
+    },
+    "policy_store_server": {
+      "name": "policy_store_server",
+      "category": "policy_management",
+      "description": "ADR Policy Store Context Provider for compliance and policy analysis",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/policy_store_server.py"
+      ],
+      "capabilities": [
+        "get_policies",
+        "search_policies",
+        "get_policy_categories",
+        "assess_policy_violations",
+        "analyze_compliance"
+      ]
+    },
+    "source_code_analyzer_server": {
+      "name": "source_code_analyzer_server",
+      "category": "code_analysis",
+      "description": "ADR Source Code Context Provider for MCP server source code analysis",
+      "type": "local",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_code_analyzer_server.py"
+      ],
+      "capabilities": [
+        "get_source_code",
+        "list_mcp_servers",
+        "get_server_categories",
+        "analyze_tool_capabilities",
+        "analyze_vulnerabilities",
+        "search_code_patterns"
+      ]
+    },
+    "email_server": {
+      "name": "email_server",
+      "category": "communication",
+      "description": "Corporate email system emulation for safe attack testing - logs email operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/email_server.py"
+      ],
+      "capabilities": [
+        "send_email",
+        "get_contacts",
+        "forward_email",
+        "export_emails",
+        "search_emails",
+        "get_email_logs"
+      ]
+    },
+    "http_server": {
+      "name": "http_server",
+      "category": "web_services",
+      "description": "HTTP/web request emulation for safe attack testing - logs all HTTP operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/http_server.py"
+      ],
+      "capabilities": [
+        "upload_file",
+        "send_webhook",
+        "make_api_call",
+        "submit_form",
+        "check_url_status",
+        "download_content",
+        "send_get_request",
+        "send_post_request",
+        "get_http_logs"
+      ]
+    },
+    "database_server": {
+      "name": "database_server",
+      "category": "data_access",
+      "description": "Database access emulation for safe attack testing - logs all database operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/database_server.py"
+      ],
+      "capabilities": [
+        "execute_query",
+        "backup_table",
+        "export_data",
+        "create_user",
+        "get_schema_info",
+        "get_database_logs"
+      ]
+    },
+    "file_server": {
+      "name": "file_server",
+      "category": "file_operations",
+      "description": "File system emulation for safe attack testing - logs all file operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/file_server.py"
+      ],
+      "capabilities": [
+        "read_file",
+        "write_file",
+        "copy_file",
+        "list_directory",
+        "delete_file",
+        "search_files",
+        "create_directory",
+        "get_file_info",
+        "move_file",
+        "get_file_logs"
+      ]
+    },
+    "slack_server": {
+      "name": "slack_server",
+      "category": "communication",
+      "description": "Slack team communication emulation for safe attack testing - logs all Slack operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/slack_server.py"
+      ],
+      "capabilities": [
+        "send_message",
+        "upload_file",
+        "get_channel_history",
+        "search_messages",
+        "get_user_info",
+        "create_channel",
+        "list_channels",
+        "get_slack_logs"
+      ]
+    },
+    "github_server": {
+      "name": "github_server",
+      "category": "development",
+      "description": "GitHub repository emulation for safe attack testing - logs all GitHub operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/github_server.py"
+      ],
+      "capabilities": [
+        "get_repository",
+        "list_repository_contents",
+        "get_file_content",
+        "search_repositories",
+        "get_repository_secrets",
+        "create_fork",
+        "create_issue",
+        "get_github_logs"
+      ]
+    },
+    "openai_server": {
+      "name": "openai_server",
+      "category": "ai_services",
+      "description": "OpenAI API emulation for safe attack testing - logs all AI interactions",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/openai_server.py"
+      ],
+      "capabilities": [
+        "chat_completion",
+        "list_models",
+        "create_image",
+        "fine_tune_model",
+        "generate_embeddings",
+        "moderate_content",
+        "get_openai_logs"
+      ]
+    },
+    "ldap_server": {
+      "name": "ldap_server",
+      "category": "identity_management",
+      "description": "LDAP/Active Directory emulation for safe attack testing - logs all directory operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/ldap_server.py"
+      ],
+      "capabilities": [
+        "authenticate_user",
+        "search_users",
+        "search_groups",
+        "add_user_to_group",
+        "create_user",
+        "get_user_attributes",
+        "modify_user",
+        "get_ldap_logs"
+      ]
+    },
+    "sms_server": {
+      "name": "sms_server",
+      "category": "communication",
+      "description": "SMS messaging emulation for safe attack testing - logs all SMS operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/sms_server.py"
+      ],
+      "capabilities": [
+        "send_sms",
+        "create_contact_group",
+        "get_account_balance",
+        "get_inbox_messages",
+        "get_message_status",
+        "get_usage_stats",
+        "schedule_sms",
+        "send_bulk_sms",
+        "get_sms_logs"
+      ]
+    },
+    "api_gateway_server": {
+      "name": "api_gateway_server",
+      "category": "api_security",
+      "description": "API Gateway emulation for safe attack testing - logs all API operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/api_gateway_server.py"
+      ],
+      "capabilities": [
+        "make_api_request",
+        "authenticate_api_key",
+        "create_api_key",
+        "get_rate_limits",
+        "list_api_endpoints",
+        "revoke_api_key",
+        "get_api_usage_stats",
+        "get_api_logs"
+      ]
+    },
+    "jira_server": {
+      "name": "jira_server",
+      "category": "project_management",
+      "description": "Enterprise Jira integration for ticket management and issue tracking",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/jira_server.py"
+      ],
+      "capabilities": [
+        "list_tickets",
+        "get_ticket",
+        "add_comment",
+        "get_jira_logs"
+      ]
+    },
+    "terminal_server": {
+      "name": "terminal_server",
+      "category": "system_emulation",
+      "description": "Terminal and command execution emulation for safe attack testing - logs all operations",
+      "type": "local_environment",
+      "command": "uv",
+      "args_template": [
+        "run",
+        "python",
+        "../../../../context_providers/source_codes/mcp_servers_2/terminal_server.py"
+      ],
+      "capabilities": [
+        "execute_command",
+        "execute_python_code",
+        "create_file",
+        "run_script",
+        "get_terminal_logs"
+      ]
+    }
+  }
+}

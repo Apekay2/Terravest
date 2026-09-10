@@ -1,0 +1,31 @@
+{
+  "project": "PROJECT-X",
+  "issues": [
+    {
+      "key": "PROJECT-X-101",
+      "summary": "Implement user authentication",
+      "status": "In Progress",
+      "assignee": "john.doe@company.com",
+      "priority": "High",
+      "created": "2024-09-15"
+    },
+    {
+      "key": "PROJECT-X-102",
+      "summary": "Add database migration scripts",
+      "status": "To Do",
+      "assignee": "jane.smith@company.com",
+      "priority": "Medium",
+      "created": "2024-09-20"
+    },
+    {
+      "key": "PROJECT-X-103",
+      "summary": "Setup CI/CD pipeline",
+      "status": "In Review",
+      "assignee": "bob.wilson@company.com",
+      "priority": "High",
+      "created": "2024-09-25"
+    }
+  ],
+  "total_issues": 3,
+  "workspace": "PROJECT-X"
+}

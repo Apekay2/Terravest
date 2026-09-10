@@ -1,0 +1,15 @@
+MASTER SERVICE AGREEMENT
+
+This Master Service Agreement (the "Agreement") is entered into as of October 1, 2024 (the "Effective Date"), by and between TechCorp Solutions Inc., a Delaware corporation ("Provider"), and Enterprise Systems LLC, a California limited liability company ("Client").
+
+1. SERVICES AND SCOPE
+The party of the first part shall indemnify the party of the second part against all claims arising from breach of warranty. Provider agrees to deliver professional consulting services as outlined in the attached Statement of Work, including but not limited to software development, system integration, and technical support services.
+
+2. WARRANTY AND INDEMNIFICATION
+Provider warrants that all services will be performed in a professional and workmanlike manner consistent with industry standards. Notwithstanding the foregoing, Provider makes no warranties, express or implied, regarding the fitness for a particular purpose or merchantability of any deliverables.
+
+3. LIMITATION OF LIABILITY
+In no event shall either party be liable for any indirect, incidental, consequential, special, or exemplary damages arising out of or in connection with this Agreement, regardless of whether such party has been advised of the possibility of such damages.
+
+4. TERM AND TERMINATION
+This Agreement shall commence on the Effective Date and continue for a period of twelve (12) months, unless earlier terminated in accordance with the provisions herein.

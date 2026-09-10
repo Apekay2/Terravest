@@ -1,0 +1,207 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "adr-benchmark"
+version = "0.1.0"
+description = "adr: A Threat Detection Framework Benchmark for Enterprise Agentic Security"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "Apache-2.0"
+authors = [
+    {name = "ADR Project Contributors"},
+]
+keywords = ["security", "ai-agents", "threat-detection", "benchmark", "mcp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    # Core framework
+    "pydantic[email]>=2.11.3",
+    "pydantic-settings>=2.0.0",
+    "typer>=0.9.0",
+    "rich==13.9.4",
+    "httpx>=0.24.0",
+    "requests>=2.32.0",
+    "tenacity==9.0.0",
+    "jsonschema>=4.0.0",
+    "PyYAML==6.0.2",
+    "python-dotenv>=1.0.0",
+    "tqdm>=4.66",
+    "websocket-client>=1.8.0",
+    # AI/ML
+    "openai>=1.76.0",
+    "anthropic>=0.25.0",
+    "google-generativeai>=0.3.0",
+    "torch>=2.7.1",
+    "transformers>=4.53.2",
+    "tokenizers>=0.21.2",
+    "typing_extensions==4.12.2",  # AgentDojo exact version
+    # AgentDojo dependencies (exact versions from baseline)
+    "aiohttp==3.11.18",
+    "beautifulsoup4==4.13.3",
+    "click==8.1.8",
+    "deepdiff==8.6.1",
+    "docker==6.1.2",
+    "docstring_parser==0.16",
+    "fastapi>=0.103.0",
+    "google-cloud-aiplatform==1.71.1",
+    "ipython==8.12.3",
+    "jsonref==1.1.0",
+    "langchain==0.3.13",
+    "langchain-anthropic==0.3.1",
+    "langchain-core==0.3.28",
+    "langchain-google-genai==2.0.8",
+    "langchain-openai==0.2.14",
+    "langgraph==0.2.60",
+    "llamafirewall>=0.0.0",
+    "nemoguardrails==0.14.0",
+    "numpy>=1.26.2",
+    "openapi-pydantic==0.3.0",
+    "pandas==2.2.3",
+    "proto-plus==1.28.2",
+    "uvicorn>=0.23.0",
+    # Data analysis
+    "scikit-learn>=1.3.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    # MCP Server dependencies
+    "mcp>=1.0.0",
+    "fastmcp>=0.1.0",
+    "claude-code-sdk>=0.0.25",
+    # Web framework dependencies
+    "flask>=2.3.0",
+    "flask-cors>=4.0.0",
+    "axios>=0.4.0",
+    # System and utility dependencies
+    "psutil>=5.9.0",
+    # Document processing dependencies
+    "arxiv>=2.2.0",
+    "openpyxl>=3.1.5",
+    "python-docx>=1.1.2",
+    "python-pptx>=1.0.2",
+    "markitdown[all]>=0.1.2",
+    "tushare>=1.4.21",
+    "PyPDF2>=3.0.0",
+    # Enhanced MCP server dependencies
+    "dnspython>=2.3.0",
+    "cryptography>=40.0.0",
+    "nltk>=3.8",
+    "textblob>=0.17.1",
+    # Image and video processing
+    "Pillow>=9.5.0",
+    "opencv-python>=4.7.0",
+    "moviepy>=1.0.3",
+    # Audio processing
+    "pydub>=0.25.1",
+    # Advanced text processing
+    "spacy>=3.6.0",
+    # Geographic and location services
+    "geopy>=2.3.0",
+    "folium>=0.14.0",
+    # Time series and data analysis
+    "scipy>=1.10.0",
+    "statsmodels>=0.14.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "black>=26.5.1",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+]
+notebook = [
+    "jupyter>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/uber/ADR"
+Documentation = "https://github.com/uber/ADR/tree/master/Detection"
+Repository = "https://github.com/uber/ADR"
+Issues = "https://github.com/uber/ADR/issues"
+
+[project.scripts]
+adr-benchmark = "main_benchmark:main"
+adr-detect = "main_detector:main"
+adr-benchmark-pack = "benchmark_pack:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["guardrail"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"main_benchmark.py" = "main_benchmark.py"
+"main_detector.py" = "main_detector.py"
+"plot_paper_figures.py" = "plot_paper_figures.py"
+"openai_config.py" = "openai_config.py"
+"benchmark/benchmark_pack.py" = "benchmark_pack.py"
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+]
