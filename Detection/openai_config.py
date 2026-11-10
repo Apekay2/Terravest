@@ -1,142 +1,147 @@
 #!/usr/bin/env python3
-"""
-OpenAI Configuration Module for ADR Platform
+"""Configuration helpers for the ADR detection model clients.
 
-This module provides a standardized OpenAI client configuration.
-All OpenAI clients in the ads_platform should use this configuration.
-
-Also provides Claude client configuration for API access.
+API credentials are read from the process environment at call time so importing
+this module never requires secrets to be present. Do not log credential values.
 """
+
+from __future__ import annotations
 
 import os
-import warnings
-import openai
+from typing import Any, Dict, List, Optional
+
+from anthropic import Anthropic
 from openai import OpenAI
-from typing import Dict, Any, Optional
 
 
-def calculate_cost(cost_per_1m_input: float, cost_per_1m_output: float,
-                   input_tokens: int, output_tokens: int) -> float:
-    """Return cost in USD given per-1M-token rates and token counts.
-
-    Rates come from config_detector.yaml (cost_per_1m_input / cost_per_1m_output)
-    so that pricing stays co-located with the model definition.
-    """
+def calculate_cost(
+    cost_per_1m_input: float,
+    cost_per_1m_output: float,
+    input_tokens: int,
+    output_tokens: int,
+) -> float:
+    """Return USD cost from per-million-token prices and token counts."""
+    if cost_per_1m_input < 0 or cost_per_1m_output < 0:
+        raise ValueError("Token prices must be non-negative")
+    if input_tokens < 0 or output_tokens < 0:
+        raise ValueError("Token counts must be non-negative")
     return (input_tokens * cost_per_1m_input + output_tokens * cost_per_1m_output) / 1_000_000
 
 
-def get_openai_client() -> OpenAI:
-    """
-    Get a configured OpenAI client using OPENAI_API_KEY environment variable.
-    All ads_platform components should use this function to get their OpenAI client.
+def _required_api_key(name: str) -> str:
+    """Read and validate a required API key without exposing its value."""
+    value = os.environ.get(name, "").strip()
+    if not value:
+        raise RuntimeError(f"Missing required environment variable: {name}")
+    return value
 
-    Returns:
-        OpenAI: Configured client
-    """
-    return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
+def get_openai_client() -> OpenAI:
+    """Create an OpenAI client using OPENAI_API_KEY."""
+    return OpenAI(api_key=_required_api_key("OPENAI_API_KEY"), timeout=60.0, max_retries=2)
 
 
 def get_openai_config() -> Dict[str, Any]:
-    """
-    Get the OpenAI configuration dictionary.
+    """Return legacy OpenAI config shape for integrations that still require it.
 
-    Returns:
-        Dict containing api_key
+    Prefer :func:`get_openai_client` so callers do not need to handle secret
+    material directly. Never log or persist the returned mapping.
     """
-    return {
-        'api_key': os.environ["OPENAI_API_KEY"],
-    }
+    return {"api_key": _required_api_key("OPENAI_API_KEY")}
 
 
 def create_chat_completion(
-    model: str = 'gpt-4o',
+    model: str = "gpt-4o",
     messages: Optional[list] = None,
-    **kwargs
+    **kwargs: Any,
 ) -> Any:
-    """
-    Create a chat completion using the configured client.
+    """Create an OpenAI chat completion with bounded client timeouts/retries."""
+    if not model or not model.strip():
+        raise ValueError("model is required")
+    if not messages:
+        raise ValueError("messages is required and must not be empty")
 
-    Args:
-        model: Model to use (defaults to gpt-4o)
-        messages: Messages for the completion
-        **kwargs: Additional arguments for the completion
-
-    Returns:
-        Chat completion response
-    """
-    if messages is None:
-        raise ValueError("messages is required")
-
-    client = get_openai_client()
-    return client.chat.completions.create(
+    return get_openai_client().chat.completions.create(
         model=model,
         messages=messages,
-        **kwargs
+        **kwargs,
     )
 
 
 def create_reasoning_completion(
-    model: str = 'claude-sonnet-4-6',
+    model: str = "claude-sonnet-4-6",
     messages: Optional[list] = None,
     max_tokens: int = 4000,
-    **kwargs
+    **kwargs: Any,
 ) -> Dict[str, Any]:
+    """Create an Anthropic Messages API completion.
+
+    The previous implementation sent a Claude model name to the OpenAI API,
+    which is not a valid or reliable provider routing strategy. This function
+    now uses the Anthropic SDK and returns the established normalized response
+    shape consumed by the detector.
     """
-    Create a reasoning completion using the Anthropic API via Claude CLI.
+    if not model or not model.strip():
+        raise ValueError("model is required")
+    if not messages:
+        raise ValueError("messages is required and must not be empty")
+    if max_tokens <= 0:
+        raise ValueError("max_tokens must be greater than zero")
 
-    Args:
-        model: Reasoning model to use
-        messages: Messages for the completion
-        max_tokens: Maximum tokens to generate
-        **kwargs: Additional arguments for the completion
+    system_parts: List[str] = []
+    anthropic_messages: List[Dict[str, Any]] = []
+    for message in messages:
+        if not isinstance(message, dict):
+            raise ValueError("Each message must be a mapping")
+        role = message.get("role")
+        content = message.get("content")
+        if role == "system":
+            if content:
+                system_parts.append(str(content))
+            continue
+        if role not in ("user", "assistant"):
+            raise ValueError("Anthropic messages must use user, assistant, or system roles")
+        if content is None:
+            raise ValueError("Message content must not be null")
+        anthropic_messages.append({"role": role, "content": content})
 
-    Returns:
-        Reasoning completion response
-    """
-    if messages is None:
-        raise ValueError("messages is required")
+    if not anthropic_messages:
+        raise ValueError("At least one user or assistant message is required")
 
-    client = get_openai_client()
-    try:
-        response = client.chat.completions.create(
-            model=model,
-            messages=messages,
-            max_tokens=max_tokens,
-            **kwargs
-        )
+    client = Anthropic(
+        api_key=_required_api_key("ANTHROPIC_API_KEY"),
+        timeout=300.0,
+        max_retries=2,
+    )
+    response = client.messages.create(
+        model=model,
+        messages=anthropic_messages,
+        max_tokens=max_tokens,
+        **({"system": "\n\n".join(system_parts)} if system_parts else {}),
+        **kwargs,
+    )
 
-        # Guard against empty responses
-        if not response.choices or not response.choices[0].message:
-            raise RuntimeError(f"Empty response from model {model}")
-        content = response.choices[0].message.content or ""
-
-        # Convert OpenAI-style response to dict format
-        return {
-            'content': [{'text': content, 'type': 'text'}],
-            'model': response.model,
-            'usage': {
-                'input_tokens': response.usage.prompt_tokens if response.usage else 0,
-                'output_tokens': response.usage.completion_tokens if response.usage else 0
-            }
-        }
-    except Exception as e:
-        raise RuntimeError(f"Failed to call model: {str(e)}")
+    text = "".join(
+        block.text for block in response.content if getattr(block, "type", None) == "text"
+    )
+    usage = getattr(response, "usage", None)
+    return {
+        "content": [{"text": text, "type": "text"}],
+        "model": response.model,
+        "usage": {
+            "input_tokens": getattr(usage, "input_tokens", 0) if usage else 0,
+            "output_tokens": getattr(usage, "output_tokens", 0) if usage else 0,
+        },
+    }
 
 
 if __name__ == "__main__":
-    # Test the configuration
+    # Explicit smoke test; requires an intentionally configured API key.
     print("Testing OpenAI configuration...")
-
-    try:
-        client = get_openai_client()
-        print(f"✅ Client created successfully")
-
-        response = create_chat_completion(
-            messages=[{'role': 'user', 'content': 'Hello, are you working?'}],
-            max_tokens=10
-        )
-        print(f"✅ Test completion successful")
-        print(f"   Response: {response.choices[0].message.content[:50]}...")
-
-    except Exception as e:
-        print(f"❌ Configuration test failed: {e}")
+    response = create_chat_completion(
+        messages=[{"role": "user", "content": "Hello, are you working?"}],
+        max_tokens=10,
+    )
+    message = response.choices[0].message
+    print("Completion succeeded")
+    print(f"Response: {(message.content or '')[:50]}...")
